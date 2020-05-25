@@ -1,0 +1,922 @@
+* {
+	margin:0;
+	padding:0;
+	
+}
+body{
+	background-image: url('images/sumaBEKGRAUND.jpg');
+	background-size: 100% 100%;
+	z-index: 1;
+	position: relative;
+	font-family: sans-serif;
+	height:100%;
+}
+
+														/***NAV**/
+.navigation{
+	width:95%;
+	height:8vh;
+	background-color: #f46717;
+	float:right;	
+}
+#menubuttonmobilni{
+	display:none;
+}
+#welcome{
+	display:none;
+}
+#mapindexmobilni{
+	display:none;
+}
+nav {
+	width:50%;
+	height: 100%;
+	display:grid;
+	grid-template-columns:repeat(5,1fr);
+	float:right;
+	margin-right: 15%;
+	text-align: center;
+}
+nav img{
+	width:90%;
+	height: 100%;
+	
+}
+nav a{
+	text-decoration: none;
+	font-size: 1.4vmax;
+	color:white;
+	line-height: 8vh;
+}
+nav a:hover{
+	color:black;
+}
+.active{
+	color:black;
+}
+.fejs {
+	width:20%;
+	height: 3vh;
+	position: absolute;
+	display:grid;
+	grid-template-columns: repeat(2,1fr);
+	margin-left:3%;
+}
+.fejs a{
+	width:10%;
+	height:3vh;
+	position: absolute;	
+	margin-left:2%;
+	margin-top:2.5vh;
+}
+.fejs img{
+	width:90%;
+	height:100%;
+}
+
+.fejs a:last-child{
+	margin-left:14%;
+	border-right:none;
+}
+										/***MAPA***/
+#map{
+	height:80vh;
+	width:100%;
+}
+										/***FORMA***/
+#button{
+	background-color: #f46717;
+	color:white;
+	font-size: 1.3vmax;
+	width:15%;
+	height:8%;
+	border-radius: 9px;
+	cursor:pointer;
+	box-shadow: 0px 0px 20px 5px  black;
+}
+.contactform{
+	width:60vw;
+	height: 80vh;
+	margin-left:20vw;
+	margin-top:7%;
+	color:white;
+}
+.contactform h2{
+	text-align: left;
+	height: 10%;
+	font-size: 2vmax;
+	color:white;
+	font-weight: normal;
+}
+
+.contactform textarea{
+	height: 30%;
+	width:95.222%;
+	font-size: 1.2vmax;
+	max-width:95.222%;
+	max-height: 40%;
+	min-width: 95.222%;
+	min-height: 20%;
+	border:1px solid #f46717;
+	background-color: rgba(255, 255, 255, 0.3);
+	border-radius:7px;
+	color:white;
+}
+.praznopolje{
+	width:90%;
+	height:50%;
+	font-size: 1.2vmax;
+	border:none;
+	border-bottom: 1px solid #f46717;
+	background-color:rgba(255, 255, 255, 0.3);
+	color:white;
+	border-radius:7px;
+}
+::placeholder {
+	color:white;
+	padding-left:2%;
+	padding-top:1%;
+}
+
+#forma{
+	display:grid;
+	grid-template-columns: repeat(2,1fr);
+	width:100%;
+	height: 30%;	
+	color:white;
+}
+
+
+
+
+
+												/***TRAKA***/
+.traka{
+	width:100%;
+	height:8vh;
+	background-color: #f46717;
+	text-align: center;
+	font-size: 1.8vmax;
+	color:white;
+	line-height: 8vh;
+	margin-top:;
+	word-spacing: 6px;
+	margin-top:-0.33%;
+	z-index: 9;
+}
+#ispod{
+	margin-top:10%;
+}
+													/**ONAMA**/
+.gridonama{
+	width:25%;
+	display:grid;
+	grid-template-columns: 20% 80%;
+	background-color: ;
+	position:absolute;
+	margin-top:9.5%;
+	margin-left:15%;
+}		
+	
+.gridonama img{
+	width:65%;
+	height:100%;
+	border-radius: 50%;
+}			
+.gridonama p{
+	margin-top:5%;
+	font-size: 1.2vmax;
+}						
+.about{
+	width:100%;
+	height:65vh;
+	background-image:url('images/slider-8.jpg');
+	background-size: 100% 100%;
+	color:white;
+	box-shadow: 0px 0px 63px 22px inset black;
+}
+.about p{
+	width:25%;
+	height: 8vh;
+	background-color: #f46717;
+	margin-top:13.5%;
+	font-size: 1.8vmax;
+	margin-left:37.8%;
+	position: absolute;
+	text-align: center;
+	border-radius: 20px;
+	filter:blur(0.2px);
+	opacity:0.96;
+	font-weight: ;
+	line-height: 8vh;
+	cursor: pointer;
+}
+#onamaabout{
+	color:black;
+	width:40%;
+	margin-right:10%;
+	margin-top:6%;
+
+}
+.description{
+	width:70%;
+	margin-left:auto;
+	margin-right: auto;
+	text-align: justify;
+	font-size: 1.3vmax;
+	margin-top:5%;
+	color:white;
+	margin-bottom:5%;
+}
+.description h2{
+	text-align: center;
+}
+.description p{
+	margin-top:5%;
+}
+.parent{
+	width: 100%;
+	overflow: hidden; 
+	height:65vh;
+	z-index:1;
+}
+#indexabout p{
+	width:17%;
+	border:1px solid white;
+	margin-left:40%;
+}
+#indexabout a{
+	color:white;
+}
+
+
+#indexabout
+{
+     height: 100%;
+     width: 100%;
+     background-size: cover;
+     background-position: center;
+     transition: all 0.5s ease;
+     background-image: url('images/indexabout.jpg');
+}
+#indexabout:hover
+{
+     transform: scale(1.1);
+}
+
+
+																/***LOGO***/
+
+.logo img{
+	width:100%;
+	height:100%;
+	
+}
+.logo{
+	text-align: center;
+	position: relative;
+	width:25%;
+	height:40vh;
+	margin-left:10%;
+	font-family: sans-serif;
+	font-size:1.2vmax;
+
+}
+#logofon{
+	display: grid;
+	grid-template-columns: 25% 75%;
+	width:22%;
+	height:15%;
+	text-align:left;
+	margin-left:15%;
+	margin-top:3%;
+}
+#logofon img{
+	height:70%;
+	width:85%;
+	margin-top:10%;
+}
+#logofon p{
+	line-height: 58px;
+}
+.indexslika{
+	background-image: url('images/indexslika.jpg');
+	width:50%;	
+	height:65vh;
+	background-size: 100% 100%;
+	float:right;
+	margin-right: 10%;
+}
+.indexslika img{
+	width:100%;
+	height: 100%;
+}
+.slicice2{
+	display:none;
+}
+.slicice{
+	width:50%;
+	height: 20vh;
+	background-color:;
+	display:grid;
+	grid-template-rows: repeat(2,1fr);
+	grid-template-columns: repeat(3,1fr);
+	margin-left:auto;  
+	margin-right: auto;
+	padding-top:8%;
+	margin-bottom:10%;	
+	font-size: 1.6vmax;
+	text-align: center;
+	color:white;
+}
+.slicice img{
+	width:50%;
+	height: 80%;
+	align-items: center;
+	margin-left:%;
+	border-radius: 100%;
+}
+.slicice div{
+	width:60%;
+	height:100%;
+	margin-left:25%;
+}
+.slicice p{
+	background-color: rgba(255, 255, 255, 0.67);
+	color:black;
+	border-radius: 10px;
+}
+
+#slike{
+	display:grid;
+	grid-template-columns:repeat(3,1fr);
+	grid-template-rows: repeat(1,1fr);
+}
+#text{
+	display:grid;
+	grid-template-columns:repeat(3,1fr);
+	grid-template-rows: repeat(1,1fr);
+}
+																/**KATALOG**/
+.katalog{
+	margin-bottom:15%;
+	width:60%;
+	display: grid;
+	grid-template-columns: repeat(2,1fr);
+	background-color:;
+	margin-left:auto;
+	margin-right:auto;
+	
+
+}
+.katalog div{
+	margin-top:30%;
+	width:90%;
+	height:80%;
+	border: 1px solid white;
+	margin-left: 5%;
+}
+.katalog img{
+	width:100%;
+	height: 100%;
+	box-shadow: 0px 0px 16px 6px grey;
+}
+.katalog img:hover{
+	box-shadow: 0px 0px 0px 0px;
+	border:1px solid black;
+}
+.catalog{
+	width:100%;
+	height:50vh;
+	background-image:url('images/katalog.jpg');
+	background-size: 100% 100%;
+	color:white;
+	box-shadow: 0px 0px 63px 22px inset black;
+}
+.catalog p{
+	width:35%;
+	height: 16vh;
+	background-color: #f46717;
+	margin-top:10%;
+	font-size: 1.8vmax;
+	margin-left:32.5%;
+	position: absolute;
+	text-align: center;
+	border-radius: 20px;
+	filter:blur(0.2px);
+	opacity:0.96;
+	font-weight: ;
+	line-height: 8vh;
+}
+#indexopis{
+	width:30%;
+	margin-right:0%;
+	margin-left:18%;
+	display:none;
+}
+.kinezi{
+	margin-top:15%;
+	display:grid;
+	grid-template-columns: repeat(4,1fr);
+	width:60%;
+	height: 30vh;
+	background-color: red;
+	margin-left: auto;
+	margin-right: auto;
+}
+.kinezi div{
+	border:1px solid white;
+	margin-left:5%;
+	margin-right: 5%;
+}
+#katalogtraka{
+	margin-top:15%;
+}
+.kinezikatalog{
+	margin-bottom: 5%;
+	margin-top:5%;
+	width:70%;
+	display:grid;
+	grid-template-columns: repeat(3,1fr);
+	background-color: ;
+	margin-left:auto;
+	margin-right:auto;
+}
+.kinezikatalog div{
+	width:60%;
+	height:70%;
+	border:1px solid white;
+	margin-left:auto;
+	margin-right: auto;
+	margin-top:10%;
+	margin-bottom:10%;
+}
+.kinezikatalog img{
+	width:100%;
+	height:25vh;
+	box-shadow: 0px 0px 8px 1px black;
+}
+.kinezikatalog img:hover{
+	transform: scale(1.2);
+	transition-duration: 800ms;
+	box-shadow: 0px 0px 0px 0px white;
+	border:0.2px solid black;
+}
+
+
+					/********************STIHL*******************/
+header{
+	
+	background-image:/*linear-gradient(to left, rgba(0,0,0,0),rgba(244, 103, 23, 0.7)),*/ url('images/katalog.jpg');
+	background-size: 100% 100%;
+	width:100%;
+	height: 400px;
+	position: relative;
+	z-index: 5;
+}
+#nav{
+	display:inline-block;
+	width:35%;
+	height: 60px;
+	float:right;
+	background-color: #f46717;
+	margin-right:63%;
+	margin-top:6%;
+	opacity: 0.9;
+	
+}
+#nav ul{
+	width:101%;
+	margin-left:0.5%;
+}
+#nav li{
+	
+	display:inline-block;
+	width:24%;
+	line-height: 60px;
+	
+}
+#nav a{
+	list-style-type: none;
+	text-decoration-line: none;
+	color:white;
+	width:24%;
+	height:100%;
+	text-align: center;
+	opacity: 1;
+	font-weight: bolder;
+	display: inline-block;
+}
+#nav a:hover{
+	background-color: white;
+	color:black;
+}
+#nav li{
+	width:100%;
+}
+
+#nav li:hover{
+	background-color: white;
+	color:black;
+}
+.flex{
+	margin-top:5%;
+	display:grid;
+	grid-template-columns: repeat(3,1fr);
+	grid-template-rows: repeat(2,1fr);
+	width:80%;
+	margin-left:auto;
+	margin-right: auto;
+}
+.flex div{
+	width:100%;	
+}
+.flex a{
+	margin:10%;
+	margin-left:auto;
+	margin-right: auto;
+	width:70%;
+	text-decoration-line: none;
+	text-decoration-style: none;
+	-webkit-box-shadow: 0px 0px 10px 2px black;
+	-moz-box-shadow: 0px 0px 10px 2px black;
+	box-shadow: 0px 0px 10px 2px black;
+}
+.flex div:hover{
+	
+	box-shadow:none;
+	transform: scale(1.1);
+	transition-duration: 700ms;
+}
+.flex img{
+	width:100%;
+	height:100%;
+}
+
+
+.flex h1{
+	width:100%;
+	text-align:center;
+	color:black;
+	font-size:1.3vmax;
+	margin-top:2%;
+}
+.podelakatalog{
+	width:100%;
+	height:30vh;
+}
+#stihlkatalogtraka{
+	margin-top:15%;
+}
+													/***HUSQVARNA KATALOG***/
+
+#motorkehus, #trimerihus, #kosacicehus, #gradjevinskiprogramhus{
+	background-color:#161965;
+}
+#motorkehus{
+	margin-top:7%;
+}
+#menunavopen{
+	display:none;
+}
+
+
+
+
+.flexkatalogmobile{
+	display:none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+								/********RIBARNICA*********/
+/****RIBARNICA****/
+.gridriba{
+	display:grid;
+	grid-template-columns: repeat(4,1fr);
+	width:50%;
+	margin-left:auto;
+	margin-right: auto;
+	background-color: #74915E;
+	text-align: center;
+	opacity: 0.8;
+	height:8vh;
+	margin-top:3%;
+	margin-bottom:3%;
+}
+.gridriba a{
+	text-decoration: none;
+	color:white;
+	line-height: 8vh;
+	font-weight: bolder;
+	font-size:1.3vmax;
+}
+.gridriba a:hover{
+	color:black;
+	background-color: white;
+}
+#logorib{
+	width:15%;
+	height:20%;
+	margin-left:4%;
+	margin-top:3%;
+}
+.wez-slider2{
+	width:60vw;
+	height:45vh;
+	margin-left:auto;
+	margin-right:auto;
+	border-radius:20px solid grey;
+	box-shadow: 0px 0px 20px 5px grey;
+	overflow: hidden;
+	background-size: cover;
+	margin-top:-10%;
+}
+.wez-slider2  img{
+	width:20%;
+	float:left;
+	height:45vh;
+}
+.wez-slider2 figure{
+	position:relative;
+	width:500%;
+	margin:0px;
+	left: 0px;
+	animation: webzone2 20s infinite linear;
+	background-size: cover;	
+}
+@keyframes webzone2{
+	0%{left:0%;}
+	15%{left:0%;}
+	20%{left:-100%;}
+	35%{left:-100%;}
+	40%{left:-200%;}
+	55%{left:-200%;}
+	60%{left:-300%;}
+	75%{left:-300%;}
+	80%{left:-400%;}
+	100%{left:-400%;}
+}
+.ribacena{
+	display:grid;
+	grid-template-rows: 20% 70% 10%;
+	width:60%;	
+	height:100%;
+	margin-left:auto;
+	margin-right:auto;
+	text-align: center;
+	margin-bottom:5%;
+
+}
+.ribacena h2{
+	width:100%;
+	background-color: #74915E;
+	height: 80%;
+	color:white;
+	line-height: 60px;
+}
+.slike div{
+	width:100%;
+	height:100%;
+}
+.slike img{
+	width:95%;
+	height:250px;
+}
+.slike {
+	display:grid;
+	grid-template-columns: repeat(3,1fr);
+}
+.opis{
+	display:grid;
+	grid-template-columns: repeat(3,1fr);
+	color:white;
+	font-size:1.2vmax;
+	margin-top: 1%;
+}
+.ribainfo{
+	width:55%;
+	margin-left:auto;
+	margin-right: auto;
+
+}
+.ribainfo p{
+	font-size:1.6vmax;
+	text-align: center;
+	color:white;
+	margin-bottom:10%;
+	padding-top:5%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+													/**FOOTER**/
+
+.gridfootercontact{
+	background-color: black;
+	width:50%;
+	height: 50%;	
+	display:grid;
+	grid-template-rows: repeat(4,1fr);
+	grid-template-columns: 20% 80%;
+	font-size: 1vmax;
+	border-radius:10%;
+	margin-left:35%;
+	padding-top:23%;
+
+	
+}
+.gridfootercontact div{
+	text-align:left;
+	width:100%;
+
+}
+.gridfootercontact a{
+	text-decoration: none;
+	color:white;
+
+}
+.gridfootercontact p{
+	margin-top:6%;
+	margin-left:3%;
+}
+.gridfootercontact img{
+	width:80%;
+	height:70%;
+	border-radius:100%;
+}
+.gridfooterlogo{
+	width:100%;
+	margin-left:10%;
+	height:50%;
+	
+}
+
+.gridfooterlogo img{
+	width:50%;
+	height:30%;
+	}
+.gridfooterlogo p{
+	margin-top:-8%;
+	font-size: 1vmax;
+	word-spacing: 1px;
+}
+.gridfooterlogo p:first-line{
+	margin-top:-8%;
+	font-size: 1.5vmax;
+}
+.gridfooternav{
+	
+	margin-left:-5%;
+	width:50%;
+	display:grid;
+	grid-template-rows: repeat(2,1fr);
+	height:30%;
+	background-color: black;
+	margin-top:16%;
+	font-size: 1vmax;
+	
+}
+.gridfooternav div{
+	height:40%;
+	width:100%;
+}
+.gridfooternav p{
+margin-left:8%;
+text-align:left;
+margin-top:3%;
+font-size: 1vmax;
+width:100%;
+
+}
+.gridfooternav a{
+	text-decoration: none;
+	color:white;
+}
+.gridfooternav p:hover{
+	
+	box-shadow: var(--shadow);
+	padding-left:10px;
+	transition:ease-in-out 400ms;
+	color:var(--etc);
+	cursor:pointer;
+	
+}
+.gridfooternav h2{
+	font-size: 1.4vmax;
+	margin-left:7%;
+	text-align: left;
+}
+#footernav{
+	margin-top:5%;
+}
+.gridfooterslike{
+	display:grid;
+	grid-template-rows:30% 70%;
+	width:100%;
+	height:30%;
+	font-size:0.8vmax;
+	text-align: justify;
+	word-spacing: 0px;
+	margin-top:15%;
+	margin-left:-15%;
+    
+}
+
+.foterslikerows{
+	display:grid;
+	grid-template-columns: repeat(4,1fr);
+	width:100%;
+	height: 100%;
+
+}
+.foterslikerows img{
+	width:90%;
+	height:100%;
+}
+.foterslikerows div{
+	width:100%;
+	height: 60%;
+}
+.radnovremeipartneri{
+	display:grid;
+	grid-template-rows:repeat(2,50%); 
+	width:100%;
+	margin-left:-60%;
+	margin-top:13%;
+ }
+ #radnovreme{
+ 	font-size:0.8vmax;
+ 	margin-left:-20%;
+ 	width:100%;
+ 	text-align: justify;
+ 	word-spacing: 3px;
+ 	margin-top:20%;
+ 	height:100%;
+ }
+ #radnovreme div{
+ 	margin-top:10%;
+ 	text-align:center;
+ }
+
+
+footer{
+	display:grid;
+	grid-template-columns: 25% 40% 23% 12%;
+	word-spacing: 7px;
+	background-color:black; 
+	color:white;	
+	font-size: 1.6vmax;
+	text-align: center;
+	width:100%;
+	display:;
+}													

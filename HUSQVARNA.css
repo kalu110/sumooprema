@@ -1,0 +1,853 @@
+*{
+	margin:0;
+	padding:0;
+}
+.gridhusnavkat div{
+	font-size:1.3vmax;
+}
+header{
+	
+	background-image:linear-gradient(to left, rgba(0,0,0,0),rgba(0,0,50,0.95555)), 				 			url('HUSQVARNA/husqvarnaPOC.jpg');
+	background-size: 100% 100%;
+	width:100%;
+	height: 400px;
+	position: relative;
+	z-index: 5;
+}
+#nav{
+	display:inline-block;
+	width:35%;
+	height: 60px;
+	float:right;
+	background-color: #161965;
+	margin-right:63%;
+	margin-top:6%;
+	opacity: 0.55;
+	
+}
+#nav ul{
+	width:101%;
+	margin-left:0.5%;
+}
+#nav li{
+	display:inline-block;
+	width:24%;
+	line-height: 60px;
+	
+}
+#nav a{
+	list-style-type: none;
+	text-decoration-line: none;
+	color:white;
+	width:24%;
+	height:100%;
+	text-align: center;
+	opacity: 1;
+	font-weight: bolder;
+	display: inline-block;
+}
+#nav a:hover{
+	background-color: white;
+	color:black;
+}
+#nav li{
+	width:100%;
+}
+
+#nav li:hover{
+	background-color: white;
+	color:black;
+}
+#logohus{
+	float:right;
+	width:32%;
+	height:25%;
+	position: absolute;
+	margin-left:68%;
+	margin-top:3%;
+	opacity: 1;
+	z-index: 99;
+	position: absolute;
+
+
+}
+#logohus img{
+	width:100%;
+	height:100%;
+	border-bottom-left-radius:  20px;
+	border-top-left-radius:  20px;
+	filter:saturate(1)
+}
+#citav{
+	width:100%;
+	height:65vh;
+ background-color:white;
+
+
+}
+#citavkat{
+	width:100%;
+	height:260vh;
+ background-color:white;
+}
+#citavkattrimer{
+	width:100%;
+	height:310vh;
+ background-color:white;
+}
+#citavgradjevinskiprogram{
+	width:100%;
+	height:455vh;
+ background-color:white;
+}
+.flex{
+	display:inline-flex;
+	width:90vw;
+	height:40vh;
+	margin-left:5vw;
+	margin-right:5vw;
+	margin-top:6vh;
+}
+.flex div{
+	width:27vw;
+}
+.flex a{
+	width:30vw;
+	height: 50vh;
+	margin-left:1.5%;
+	margin-right:1.5%;
+	text-decoration-line: none;
+	text-decoration-style: none;
+	-webkit-box-shadow: 0px 0px 19px 6px rgba(9,9,48,0.8);
+	-moz-box-shadow: 0px 0px 19px 6px rgba(9,9,48,0.8);
+	box-shadow: 0px 0px 19px 6px rgba(9,9,48,0.8);
+}
+.flex a:hover{
+	
+	box-shadow:none;
+	transform:scale(1.2);
+	transition-duration: 1200ms;
+}
+
+.flex h1{
+	text-align:center;
+	padding-top:50%;
+	color:white;
+	font-size:2vmax;
+}
+
+#motorka{
+	background-image: url('HUSQVARNA/MOTORKE/motorkepoc.jpg');
+	width:100%;
+	height:100%;
+	background-size:100% 100%;
+	-webkit-box-shadow:inset 2px -104px 90px 30px;
+	-moz-box-shadow:inset 2px -104px 90px 30px;
+	box-shadow:inset 2px -104px 90px 30px #090930;
+}
+#trimer{
+	background-image: url('HUSQVARNA/TRIMERI/trimerpoc.jpg');
+	width:100%;
+	height:100%;
+	background-size:100% 100%;
+	-webkit-box-shadow:inset 2px -104px 90px 30px;
+	-moz-box-shadow:inset 2px -104px 90px 30px;
+	box-shadow:inset 2px -104px 90px 30px #090930;
+}
+#kosacica{
+	background-image: url('HUSQVARNA/KOSACICE/kosacicepoc.jpg');
+	width:100%;
+	height:100%;
+	background-size:100% 100%;
+	-webkit-box-shadow:inset 2px -104px 90px 30px;
+	-moz-box-shadow:inset 2px -104px 90px 30px;
+	box-shadow:inset 2px -104px 90px 30px #090930;
+}
+#motorka:hover{
+	transition-duration:  3.5s ;
+	-webkit-box-shadow: inset 0px 0px 176px 118px rgba(9,9,48,0.8);
+    -moz-box-shadow: inset 0px 0px 176px 118px rgba(9,9,48,0.8);
+     box-shadow: inset 0px 0px 176px 118px rgba(9,9,48,0.8);
+}
+#trimer:hover{
+	
+	transition-duration:  3.5s ;
+	-webkit-box-shadow: inset 0px 0px 176px 118px rgba(9,9,48,0.8);
+    -moz-box-shadow: inset 0px 0px 176px 118px rgba(9,9,48,0.8);
+     box-shadow: inset 0px 0px 176px 118px rgba(9,9,48,0.8);
+}
+#kosacica:hover{
+	
+	transition-duration:  3.5s ;
+	-webkit-box-shadow: inset 0px 0px 176px 118px rgba(9,9,48,0.8);
+    -moz-box-shadow: inset 0px 0px 176px 118px rgba(9,9,48,0.8);
+     box-shadow: inset 0px 0px 176px 118px rgba(9,9,48,0.8);
+}
+.flexmotorke{
+	
+	
+	width:80%;
+	display:flex;
+	flex-wrap: wrap;
+	margin-left:15%;
+	
+	
+}
+.flexmotorke div{
+	margin-left:5%;
+	margin-right:5%;
+	margin-top:8%;
+	text-align: center;
+	width:15vw;
+	height: 25vh;
+}
+.flexmotorke img{
+	width:100%;
+	height: 100%;
+	cursor: pointer;
+}
+.flexmotorke p{
+	padding-top:15px;
+	font-size: 1.5vmax;
+	 
+}
+											/***KATALOG TRIMERI***/
+.flextrimeri{
+	
+	
+	width:80%;
+	
+	display:flex;
+	flex-wrap: wrap;
+	margin-left:15%;
+	
+	
+	
+}
+.flextrimeri div{
+	margin-left:5%;
+	margin-right:5%;
+	margin-top:8%;
+
+	width:15vw;
+	height: 25vh;
+}
+.flextrimeri img{
+	width:100%;
+	height: 100%;
+	cursor: pointer;
+}
+.flextrimeri p{
+	padding-top:15px;
+	font-size: 1.5vmax;
+	text-align: center;	 
+}
+										
+
+
+
+/****HUSVARNA NAVIGACIJA ZA KATALOGE****/
+.gridhusnavkat{
+	display:grid;
+	grid-template-columns: repeat(3,1fr);
+	height:10vh;
+	width:50vw;
+	font-size: 1.5vmax;
+	margin-left:auto;
+	margin-right: auto;
+	background-color: red;
+}
+	
+
+.item,
+.item,
+.item {
+	background: blue;
+	width:16.666vw;
+	height:10vh;
+	text-align: center;
+	font-size: 1.5vmax;
+	line-height: 10vh;
+	box-shadow: 2px 2px 3px 2px blue;	
+}
+
+
+
+.item:hover{
+	background-color:white;
+	color:blue;
+}
+
+
+.gridhusnavkat a{
+	color:white;
+	text-decoration: none;
+	font-size: 1vmax;
+
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+#container {
+  margin-top:-92.222%;
+  position: fixed;
+  width:100%;
+  z-index: 99;
+  overflow: none;  
+  display:none;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+  height:715px;
+  width:2100px;
+  margin-top: -75%;
+  background-color: white;
+
+
+
+}
+.mySlides div{
+	width: 200px;
+}
+
+.mySlides img{
+  display:;
+  height:89%;
+  width:100%;
+ margin-left:7.99%;
+ padding-top:2.111%;
+}
+
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: fixed;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: 0px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+  background-color:  #f46717;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  line-height: 50px;
+  color: white;
+  height:50px;
+  font-size: 1.7rem;
+
+}
+
+.row {
+  display: inline-flex;
+  width:0%;
+  height:0%;
+  background-color: white;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 0%;
+  height:0%;
+}
+
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 1;
+  filter:grayscale(70%);
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+  filter:grayscale(0%);
+}
+#closgal{
+	margin-top:-164.2222%;
+	margin-left:96%;
+	position: fixed;
+	z-index: 101;
+	display:none;
+	cursor: pointer;
+}
+
+
+
+
+
+													/***GALERITRIMERI***/
+#containertrimer {
+  margin-top:-108%;
+  position: fixed;
+  width:100%;
+  z-index: 99;
+  overflow: none;  
+  display:none;
+}
+
+/* Hide the images by default */
+.mySlidestrimer {
+  display: none;
+  height:715px;
+  width:2100px;
+  margin-top: -75%;
+  background-color: white;
+
+
+
+}
+.mySlidestrimer div{
+	width: 200px;
+}
+
+.mySlidestrimer img{
+  display:;
+  height:89%;
+  width:100%;
+ margin-left:7.99%;
+ padding-top:2.111%;
+}
+#closgaltrimer{
+	margin-top:-180%;
+	margin-left:96%;
+	position: fixed;
+	z-index: 101;
+	display:none;
+	cursor: pointer;
+}
+
+
+														/**GALERYGRADJEVINSKIPROGRAM**/
+
+
+#containerprogram {
+  margin-top:-187%;
+  position: fixed;
+  width:100%;
+  z-index: 99;
+  overflow: none;  
+  display:none;
+}
+
+/* Hide the images by default */
+.mySlidesprogram {
+  display: none;
+  height:715px;
+  width:2100px;
+  margin-top: -75%;
+  background-color: white;
+
+
+
+}
+.mySlidesprogram div{
+	width: 200px;
+}
+
+.mySlidesprogram img{
+  display:;
+  height:89%;
+  width:100%;
+ margin-left:7.99%;
+ padding-top:2.111%;
+}
+#closgalprogram{
+	margin-top:-259%;
+	margin-left:96%;
+	position: fixed;
+	z-index: 101;
+	display:none;
+	cursor: pointer;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+											/****FOOTER****/
+
+.gridfootercontact{
+	background-color: black;
+	width:50%;
+	height: 50%;	
+	display:grid;
+	grid-template-rows: repeat(4,1fr);
+	grid-template-columns: 20% 80%;
+	font-size: 1vmax;
+	border-radius:10%;
+	margin-left:35%;
+	padding-top:23%;
+
+	
+}
+.gridfootercontact div{
+	text-align:left;
+	width:100%;
+	border
+
+}
+.gridfootercontact a{
+	text-decoration: none;
+	color:white;
+
+}
+.gridfootercontact p{
+	margin-top:%;
+	margin-left:3%;
+}
+.gridfootercontact img{
+	width:80%;
+	height:70%;
+	border-radius:100%;
+}
+.gridfooterlogo{
+	width:100%;
+	margin-left:10%;
+	height:50%;
+	
+}
+
+.gridfooterlogo img{
+	width:50%;
+	height:30%;
+	}
+.gridfooterlogo p{
+	margin-top:-8%;
+	font-size: 1.2vmax;
+	word-spacing: 1px;
+}
+.gridfooterlogo p:first-line{
+	margin-top:-8%;
+	font-size: 1.8vmax;
+}
+.gridfooternav{
+	
+	margin-left:10%;
+	width:50%;
+	display:grid;
+	grid-template-rows: repeat(2,1fr);
+	height:30%;
+	background-color: black;
+	margin-top:5%;
+	font-size: 1vmax;
+	
+}
+.gridfooternav div{
+	height:40%;
+	width:100%;
+}
+.gridfooternav p{
+margin-left:8%;
+text-align:left;
+margin-top:3%;
+font-size: 1vmax;
+width:100%;
+
+}
+.gridfooternav a{
+	text-decoration: none;
+	color:white;
+}
+.gridfooternav p:hover{
+	
+	box-shadow: var(--shadow);
+	padding-left:10px;
+	transition:ease-in-out 400ms;
+	color:var(--etc);
+	cursor:pointer;
+	
+}
+.gridfooternav h2{
+	font-size: 2vmax;
+}
+#footernav{
+	margin-top:5%;
+}
+.gridfooterslike{
+	width:80%;
+	height:100%;
+	display:grid;
+	grid-template-rows: repeat(4,25%);	
+	margin-left:20%;
+
+}
+.gridfooterslike img{
+	width:100%;
+	height:100%;
+}
+.gridfooterslike div{
+	
+	width:100%;
+	height: 100%;
+}
+
+
+
+footer{
+	display:grid;
+	grid-template-columns: 25% 40% 25% 10%;
+	word-spacing: 7px;
+	background-color:black; 
+	color:white;
+	height:50vh;
+	font-size: 1.6vmax;
+	text-align: center;
+	width:100%;
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+																									/***MEDIA TELEFON***/
+@media screen and (min-width:360px) and (max-width:640px) {
+    .gridhusnavkat{
+		width:100%;
+		height:7%;
+		filter:grayscale(70%);
+		background-color:#161965;		
+	}
+	.gridhusnavkat div{
+		width:100%;
+		font-size:1.2vmax;
+	}
+	#nav{
+		display:grid;
+		grid-template-rows:repeat(4,1fr);
+		width:40%;
+		height:240px;	
+}
+	#nav a{
+		font-size:1.7vmax;
+		width:100%;
+		text-align:center;
+		
+	}
+	#citav{
+		height:900px;
+	}
+	.flex{
+		width:70%;
+		height:100%;
+		display:grid;
+		grid-template-rows:repeat(3,1fr);
+		box-shadow:none;
+		border:none;
+		margin-left:15%;
+	}
+	.flex img{
+		width:100%;
+		height:100%;
+		box-shadow:none;
+		border:none;
+	}
+	.flex div{
+		box-shadow:none;
+		width:100%;
+		height:80%;
+		border:none;
+		color:red;
+	}
+	.flex a{
+		box-shadow:none;
+		width:100%;
+		border:none;
+		height:80%;
+		color:red;
+}
+.flex h1{
+	color:white;
+	font-size:2.4vmax;
+	}
+	
+.flexmotorke {
+		display:flex;
+    	flex-wrap:wrap;
+    	width:95%;
+	margin-left:2%;
+		
+    	   	
+    	
+}
+    .flexmotorke img{    	
+		border-radius:25%;
+    	width: 100%;
+    	height: 20vh;
+    	opacity: 1;
+    	filter: blur(0px);
+    	margin-top:;
+    	margin-bottom: ;
+ }
+	 .flexmotorke div{
+    	border-radius:25%;
+    	width:40%;
+    	height: 30%;
+    	opacity: 1;
+    	filter: blur(0px);
+    	
+
+ }
+	.flextrimeri {
+		display:flex;
+    	flex-wrap:wrap;
+    	width:95%;
+		margin-left:3%;
+		
+    	   	
+    	
+}
+    .flextrimeri img{
+    	
+		border-radius:25%;
+    	width: 90%;
+    	height: 50%;
+    	opacity: 1;
+    	filter: blur(0px);
+    	margin-top:;
+    	margin-bottom: ;
+
+ }
+	 .flextrimeri div{
+    	border-radius:25%;
+    	width:40%;
+    	height: 30%;
+    	opacity: 1;
+    	filter: blur(0px);
+    	
+
+ }
+	footer img{
+		width:100%;
+		height:45%;
+		margin-top:-4%;
+	
+	}
+	
+	
+	footer{
+		display:grid;
+		grid-template-columns:16% 68% 16%;
+		height:25vh;
+		float:center;
+		width:100%;
+		font-size:2.5vmax;
+		padding-top:10%;
+	
+	}
+	#citavgradjevinskiprogram{
+		height:3800px;
+}
+	#citavkattrimer{
+		height:1700px;
+	}
+	#citavkat{
+		height:1900px;
+	}
+	
+	
+}	
