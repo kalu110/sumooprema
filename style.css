@@ -289,7 +289,7 @@ nav a:hover{
 	height:15%;
 	text-align:left;
 	margin-left:15%;
-	margin-top:3%;
+	margin-top:10%;
 }
 #logofon img{
 	height:70%;
@@ -306,6 +306,7 @@ nav a:hover{
 	background-size: 100% 100%;
 	float:right;
 	margin-right: 10%;
+	margin-top:-20%;
 }
 .indexslika img{
 	width:100%;
