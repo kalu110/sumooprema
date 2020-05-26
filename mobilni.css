@@ -24,7 +24,7 @@ body, html{
 #logofon{
 	width:100%;
 	margin:0;
-	background-color: ;
+	font-size: 2vmax;
 	height: 100%;
 }
 #logofon img{
@@ -51,13 +51,11 @@ body, html{
 	height: 80%;
 	float:right;
 	margin-top:1%;
+	margin-right:4%;
 }
 #welcome{
 	display: grid;
-	width:60%;
-	height: 100%;
-	position: absolute;
-	margin:0;
+	width:80%;	
 	word-wrap: break-word;
 	font-size:2.3vmax;
 	font-family: sans-serif;
@@ -361,8 +359,54 @@ header{
 	padding-left:20%;
 }
 .flex{
-	display:none;
+	width:80%;
+	display:grid;
+	grid-template-columns: repeat(1,1fr);
 }
+.podelakatalog{
+	height:20vh;
+}
+.podelakatalog img{
+	height:100%;
+	width:100%;
+}
+.podelakatalog h1{
+	width:80%;
+	height:25px;
+	font-size: 1.8vmax;
+	line-height: 25px;
+	background-color: #f46717;
+	margin-left:auto;
+	margin-right:auto;
+	border-radius: 10px;
+	color:white;
+}
+.kinezikatalog{
+	display: grid;
+	grid-template-columns: repeat(2,1fr);
+}
+.kinezikatalog div{
+	width:80%;
+}
+.kinezikatalog img{
+	height:15vh;
+	width:100%;
+}
+.kinezikatalog img:hover{
+	transform: none;
+	transition-duration: 100ms;
+	
+}
+.traka{
+	height:5vh;
+	line-height: 5vh;
+	font-size: 1.8vmax;
+}
+#husmobilnikatalog{
+	background-color: #161965;
+}
+
+
 
 
 
