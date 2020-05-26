@@ -9,12 +9,27 @@
   <title>Ribarnica Zvornik - prodaja ribe po najpristupačnijim cijenama</title>
 <meta charset="utf-8">
 <link rel="stylesheet" href="style.css"/>
+<link rel="stylesheet" media="screen and (max-width: 640px)" href="mobilni.css">
 <script src="jQuery.js"></script>
 </head>
-<body style="background-image:url('images/fishslider-1.jpg'); background-size: 100% 100%;">
-   
+<body style="background-color:white;">
+   <div id="menunavopen">
+    <div id="navigationmobile">
+    <div class="logomenunav"><img alt="logo" src="images/logomara.png">d.o.o Šumooprema Zvornik</div>
+    <div><img onclick="closenav()" alt="close" id="close" src="images/closebtn.png"></div>
+    </div>
+    <div id="navmenu">
+    <a href="index.html"><div>Početna</div></a>
+    <a href="katalog.html"><div>Katalog</div></a>
+    <a href="onama.html"><div>Onama</div></a>
+    <a href="ribarnica.html"><div>Ribarnica</div></a>
+    </div>
+  </div>
+  <div id="menuceo">
+  <img onclick="opennav()" id="menubuttonmobilni" src="images/menu.png">
+   </div>
   
-   <a href="index.html"><img id="logorib" src="images/logomara.png"/></a>
+   <a id="logoa" href="index.html"><img id="logorib" src="images/logomara.png"/></a>
    
     </div>
        <div class="wez-slider2">
@@ -38,9 +53,9 @@
       <div class="ribacena">
         <div><h2>Sviježa riba</h2></div>
         <div class="slike">
-          <div><img src="ribarnica/pastrmka.jpg"></div>
-          <div><img src="ribarnica/saran.jpg"></div>
-          <div><img src="ribarnica/tolstolobik.jpg"></div>
+          <div><img src="ribarnica/pastrmka.jpg"><p>PASTRMKA  CIJENA 8KM / KG</p></div>
+          <div><img src="ribarnica/saran.jpg"><p>ŠARAN  CIJENA 7KM / KG</p></div>
+          <div><img src="ribarnica/tolstolobik.jpg"><p>TOLSTOLOBIK  CIJENA 5KM / KG</p></div>
         </div>
         <div class="opis">
           <div><p>PASTRMKA <br> CIJENA 8KM / KG</p></div>
@@ -51,9 +66,9 @@
        <div class="ribacena">
         <div><h2>Smrznuta riba</h2></div>
         <div class="slike">
-          <div><img src="ribarnica/filetoslica.jpg"></div>
-          <div><img src="ribarnica/plavioslic.jpg"></div>
-          <div><img src="ribarnica/girica.jpg"></div>
+          <div><img src="ribarnica/filetoslica.jpg"><p>FILET OSLIĆA  CIJENA 8KM / KG</p></div>
+          <div><img src="ribarnica/plavioslic.jpg"><p>PLAVI OSLIĆ  CIJENA 7KM / KG</p></div>
+          <div><img src="ribarnica/girica.jpg"><p>GIRICA  CIJENA 5KM / KG</p></div>
         </div>
         <div class="opis">
           <div><p>FILET OSLIĆA <br> CIJENA 8KM / KG</p></div>
