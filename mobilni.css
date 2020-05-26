@@ -8,15 +8,15 @@ body, html{
 	background-image: none;
 }
 .logo{
-	width:30%;
+	width:100px;
 	height:40%;
 	font-size: 1.4vmax;
 }
 #indexmobile{
 	display:grid;
 	grid-template-rows: repeat(2,1fr);
-	width:60%;
-	height:100%;
+	width:220px;
+	height:110px;
 	background-color: ;
 	float:right;
 	margin-top:-30%;
