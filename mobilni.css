@@ -8,14 +8,15 @@ body, html{
 	background-image: none;
 }
 .logo{
-	width:30%;
+	width:100px;
 	height:40%;
+	font-size: 1.4vmax;
 }
 #indexmobile{
 	display:grid;
 	grid-template-rows: repeat(2,1fr);
-	width:60%;
-	height:100%;
+	width:220px;
+	height:110px;
 	background-color: ;
 	float:right;
 	margin-top:-30%;
@@ -24,7 +25,7 @@ body, html{
 #logofon{
 	width:100%;
 	margin:0;
-	background-color: ;
+	font-size: 2vmax;
 	height: 100%;
 }
 #logofon img{
@@ -51,13 +52,11 @@ body, html{
 	height: 80%;
 	float:right;
 	margin-top:1%;
+	margin-right:4%;
 }
 #welcome{
 	display: grid;
-	width:60%;
-	height: 100%;
-	position: absolute;
-	margin:0;
+	width:80%;	
 	word-wrap: break-word;
 	font-size:2.3vmax;
 	font-family: sans-serif;
@@ -127,13 +126,12 @@ display:none;
 }
 #indexabout p{
 	margin-top:50%;
-	line-height: 2.5vh;
+	line-height: 40px;
 	font-size: 2vmax;
-	padding-top: 3%;
 	position: absolute;
 	width:40%;
 	margin-left:20%;
-	height: 2%;
+	height: 40px;
 }
 #indexabout:hover
 {
@@ -142,6 +140,7 @@ display:none;
 #aboutonama p{
 	width:50%;
 	height:50px;
+	line-height: 50px;
 	margin-top:50%;
 	margin-left:25%;
 }
@@ -177,7 +176,7 @@ display:none;
 	margin-top: 20%;
 	margin-bottom: 20%;
 	width:80%;
-	height:30vh;
+	height:40vh;
 	font-size:2vmax;
 	display:block;
 	color:black;
@@ -285,7 +284,7 @@ display:none;
 	border:none;
 	border-bottom: 1px solid black;
 	background-color:rgba(255, 255, 255, 0.3);
-	color:white;
+	color:black;
 	border-radius:7px;
 }
 ::placeholder {
@@ -361,5 +360,204 @@ header{
 	padding-left:20%;
 }
 .flex{
-	display:none;
+	width:80%;
+	display:grid;
+	grid-template-columns: repeat(1,1fr);
 }
+.flex div:hover{
+	transform: none;
+}
+.podelakatalog{
+	height:20vh;
+}
+.podelakatalog img{
+	height:100%;
+	width:100%;
+}
+.podelakatalog h1{
+	width:80%;
+	height:25px;
+	font-size: 1.8vmax;
+	line-height: 25px;
+	background-color: #f46717;
+	margin-left:auto;
+	margin-right:auto;
+	border-radius: 10px;
+	color:white;
+}
+.kinezikatalog{
+	display: grid;
+	grid-template-columns: repeat(2,1fr);
+}
+.kinezikatalog div{
+	width:80%;
+}
+.kinezikatalog img{
+	height:15vh;
+	width:100%;
+}
+.kinezikatalog img:hover{
+	transform: none;
+	transition-duration: 100ms;
+	
+}
+.traka{
+	height:5vh;
+	line-height: 5vh;
+	font-size: 1.8vmax;
+}
+#husmobilnikatalog{
+	background-color: #161965;
+}
+
+
+
+
+
+
+									/********FOOTER********/
+.gridfootercontact{
+	background-color: black;
+	width:50%;
+	height: 80%;	
+	display:grid;
+	grid-template-rows: repeat(4,1fr);
+	grid-template-columns: 20% 80%;
+	font-size: 2vmax;
+	border-radius:10%;
+	margin-left:auto;
+	margin-right: auto;
+
+	
+}
+.gridfootercontact div{
+	text-align:left;
+	width:100%;
+
+}
+.gridfootercontact a{
+	text-decoration: none;
+	color:white;
+
+}
+.gridfootercontact p{
+	margin-top:6%;
+	margin-left:3%;
+}
+.gridfootercontact img{
+	width:80%;
+	height:70%;
+	border-radius:100%;
+}
+.gridfooterlogo{
+	width:80%;
+	height:50%;
+	margin-left:auto;
+	margin-right: auto;
+	margin-top:10%;
+}
+
+.gridfooterlogo img{
+	width:80%;
+	height:50%;
+}
+.gridfooterlogo p{
+	margin-top:-8%;
+	font-size: 1.8vmax;
+	word-spacing: 1px;
+}
+.gridfooterlogo p:first-line{
+	margin-top:-8%;
+	font-size: 2vmax;
+}
+.gridfooternav{
+	margin-left:auto;
+	margin-right:auto;
+	width:50%;
+	display:grid;
+	grid-template-rows: repeat(2,1fr);
+	height:30%;
+	background-color: black;
+	margin-top:16%;
+	font-size: 2vmax;
+	
+}
+.gridfooternav div{
+	height:40%;
+	width:100%;
+}
+.gridfooternav p{
+margin-left:8%;
+text-align:left;
+margin-top:3%;
+font-size: 1.8vmax;
+width:100%;
+
+}
+.gridfooternav a{
+	text-decoration: none;
+	color:white;
+}
+.gridfooternav p:hover{
+	
+	box-shadow: var(--shadow);
+	padding-left:10px;
+	transition:ease-in-out 400ms;
+	color:var(--etc);
+	cursor:pointer;
+	
+}
+.gridfooternav h2{
+	font-size: 2vmax;
+	margin-left:7%;
+	text-align: left;
+}
+#footernav{
+	margin-top:5%;
+}
+.radnovremeipartneri{
+	margin-bottom: 0;
+	width:80%;
+	height:80%;
+	margin-left:auto;
+	margin-right: auto;
+	margin-top:0;
+	display:grid;
+	grid-template-rows:repeat(2,50%); 
+}
+#radnovreme{
+	width:100%;
+	height: 100%;
+	font-size: 2vmax;
+	margin-top:0;
+	margin-left:auto;
+	margin-right: auto;
+}
+#radnovreme div{
+	margin-top:3%;
+}
+.gridfooterslike{
+	margin-left:auto;
+	margin-right: auto;
+	margin-top:1;
+	font-size: 1.8vmax;
+	height: 100%;
+}
+.footerslikerows{
+	margin-top:0;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+footer{
+	display:grid;
+	grid-template-rows: repeat(4,0.5fr);
+	grid-template-columns: repeat(1,1fr);
+	word-spacing: 7px;
+	background-color:black; 
+	color:white;	
+	font-size: 1.6vmax;
+	text-align: center;
+	width:100%;
+	height: 100%;
+}															
