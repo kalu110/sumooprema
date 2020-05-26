@@ -10,6 +10,7 @@ body, html{
 .logo{
 	width:30%;
 	height:40%;
+	font-size: 1.4vmax;
 }
 #indexmobile{
 	display:grid;
@@ -125,13 +126,12 @@ display:none;
 }
 #indexabout p{
 	margin-top:50%;
-	line-height: 2.5vh;
+	line-height: 40px;
 	font-size: 2vmax;
-	padding-top: 3%;
 	position: absolute;
 	width:40%;
 	margin-left:20%;
-	height: 2%;
+	height: 40px;
 }
 #indexabout:hover
 {
@@ -140,6 +140,7 @@ display:none;
 #aboutonama p{
 	width:50%;
 	height:50px;
+	line-height: 50px;
 	margin-top:50%;
 	margin-left:25%;
 }
@@ -362,6 +363,9 @@ header{
 	width:80%;
 	display:grid;
 	grid-template-columns: repeat(1,1fr);
+}
+.flex div:hover{
+	transform: none;
 }
 .podelakatalog{
 	height:20vh;
