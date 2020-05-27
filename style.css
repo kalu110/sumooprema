@@ -711,6 +711,14 @@ header{
 	font-size:1.2vmax;
 	margin-top: 1%;
 }
+.opis p{
+	width:95%;
+	height:100%;
+	background-color: #74915E;
+	margin-left:auto;
+	margin-right: auto;
+	opacity:0.95555;
+}
 .ribainfo{
 	width:55%;
 	margin-left:auto;
@@ -724,7 +732,18 @@ header{
 	margin-bottom:10%;
 	padding-top:5%;
 }
-
+#menuceo{
+	display:none;
+}
+.slike p{
+	display:none;
+}
+#sakrij{
+	display:none;
+}
+#katalogostalisakrij{
+	display:none;
+}
 
 
 
