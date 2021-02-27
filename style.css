@@ -258,6 +258,12 @@
 	margin-bottom:30px;
 	margin-top: 30px;
 }
+.kat p{
+	text-align: justify;
+	width: 100%;
+	line-height: 20px;
+
+}
 
 .d-block{
 	height: 100%;
@@ -333,4 +339,14 @@
 
 #modal {
 	width: 100%;
+}
+
+
+.textkat{
+	text-align: justify;
+	margin-left: 0;
+	line-height: 23px;
+	padding: 0;
+	border: 0px solid red;
+
 }
