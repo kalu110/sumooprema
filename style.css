@@ -264,6 +264,9 @@
 	line-height: 20px;
 
 }
+.kat img{
+	width: 100%;
+}
 
 .d-block{
 	height: 100%;
@@ -348,5 +351,10 @@
 	line-height: 23px;
 	padding: 0;
 	border: 0px solid red;
+
+}
+#link:hover {
+	color:#F3F3F3;
+	font-weight: 400;
 
 }
