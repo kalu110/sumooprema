@@ -1,174 +1,357 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta name="viewport" content="width=device-width">
-  <meta name="keywords" content="STIHL,motorke,trimeri,kosacice,husqvarna,meterize,zvornik,polovni uredjaji,ribarnica,riba,pastrmka,meterize,boškovići,riba zvornik,polovni uredjaji zvornik,sumooprema,Šumooprema">
-    <meta name="author" content="Luka Eric Komsa Skiljo" >
-    <meta name="description" content="Ovlašteni zastupnik STIHL i HUSQVARNA motornih uredjaja. Naša poslovnica vrši prodaju i servis svih vrsta motornih uredjaja, uvijek raspolaže svim rezervnim dijelovima proizvođača STIHL i HUSQVAR. Sertifikovan serviser, profesionalna usluga i pristupačna cijena.
-    U sklopu naše poslovnice je i ribarnica koja uvijek raspolaže sviježom i smrznutom ribom.">
-  <link href="https://fonts.googleapis.com/css?family=Black+Ops+One&display=swap" rel="stylesheet">
-  <link rel="icon" type="image/png" href="images/stihll.png">
-  <title>Šumooprema Zvornik - Katalog Stihl proizvoda</title>
-<meta charset="utf-8">
-<link rel="stylesheet" href="style.css"/>
-<script src="main.js"></script>
-<link rel="stylesheet" media="screen and (max-width: 640px)" href="mobilni.css">
-</head>
-<body style="background-image: none;">
-<header>
-<div id="poc">
-  <div id="nav">
-    <ul>
-          <a href="index.html"><li>POČETNA</li></a>
-          <a href="katalog.html"> <li>KATALOG</li></a>
-          <a href="onama.html"><li>O NAMA</li></a>
-          <a href="ribarnica.html"><li>RIBARNICA</li></a>
-    </ul>
-  </div>
-</div>  
-</header>
-  <div class="container flexkatalogmobile">
-    <div><p>Motorne testere</p></div>
-    <div><p>Trimeri</p></div>
-    <div><p>Kosačice</p></div>
-    <div><p>Ostali uredjaji</p></div>
-    <div><p>Ostalo</p></div>
-    <div><p>Zaštita</p></div>
-  </div>
+    <head>
+        <meta name="viewport" content="width=device-width" />
+        <meta name="keywords" content="STIHL,motorke,trimeri,kosacice,husqvarna,meterize,zvornik,polovni uredjaji,ribarnica,riba,pastrmka,meterize,boškovići,riba zvornik,polovni uredjaji zvornik,sumooprema,Šumooprema" />
+        <meta name="author" content="Luka Eric Komsa Skiljo" />
+        <meta
+            name="description"
+            content="Ovlašteni zastupnik STIHL i HUSQVARNA motornih uredjaja. Naša poslovnica vrši prodaju i servis svih vrsta motornih uredjaja, uvijek raspolaže svim rezervnim dijelovima proizvođača STIHL i HUSQVAR. Sertifikovan serviser, profesionalna usluga i pristupačna cijena. U sklopu naše poslovnice je i ribarnica koja uvijek raspolaže sviježom i smrznutom ribom."
+        />
+         <link rel="stylesheet" href="lightbox.min.css" />
+         <link rel="icon" type="image/png" href="images/stihll.png" />
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+        <meta name="viewport" content="width=device-width" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+       <!-- drugi jbox -->
+       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-  <div class="container flex"> 
-     
-      <a href="#stihlkatalogtraka"><div class="podelakatalog"><img src="images/motornapila.jpg"><h1>MOTORNE TESTERE</h1></div></a>
-      <a href="#trimeri"><div  class="podelakatalog"><img src="images/trimer.jpg"><h1>TRIMERI</h1></div></a>
-      <a href="#kosacice"><div  class="podelakatalog"><img src="images/kosacicaa.jpg"><h1>KOSAČICE</h1></div></a>
+
+        <title>Šumooprema Zvornik - Početna stranica</title>
+        <meta charset="utf-8" />
+        <script src="main.js"></script>
+        <script src="contact.js"></script>
+        <script src="store.js"></script>
+        <script src="lightbox-plus-jquery.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    </head>
+    <body style="background-image: none;">
+        <nav class="navbar navbar-expand-lg navbar-light ">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a id="link" class="nav-link" aria-current="page" href="index.html">POCETNA</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a id="link" class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            KATALOG
+          </a>
+          <ul style="background-color: #f46717;" class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item" href="stihlkatalog.html">STIHL</a></li>
+            <li><a class="dropdown-item" href="HUSQVARNA.html">HUSQVARNA</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a id="link" class="nav-link" href="onama.html">O NAMA</a>
+        </li>
+        <li class="nav-item">
+          <a id="link" class="nav-link" href="ribarnica.html">RIBARNICA</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div id="slikakatalog" class="col-md-12"><p>STIHL</p></div>
+
+<div id="stihl" class="row">
+
+<div class="col-md-4"> 
+<a href="#motorke"><div class="card bg-dark text-white">
+  <img src="images/stihlmotorka.jpg" class="card-img" alt="...">
+  <div class="card-img-overlay">
+    <h5 class="card-title">MOTORNE TESTERE</h5>
+  </div>
+</div>
+</div>
+</a>
+
+<div class="col-md-4"> 
+<a href="#trimeri"><div class="card bg-dark text-white">
+  <img src="images/stihltrimer.jpg" class="card-img" alt="...">
+  <div class="card-img-overlay">
+    <h5 class="card-title">TRIMERI</h5>
+  </div>
+</div>
+</div>
+</a>
+
+<div class="col-md-4"> 
+<a href="#kosacice"><div class="card bg-dark text-white">
+  <img src="images/stihlkosacica.jpg" class="card-img" alt="...">
+  <div class="card-img-overlay">
+    <h5 class="card-title">KOSACICE</h5>
+  </div>
+</div>
+</div>
+</a>
+
+<div class="col-md-4"> 
+<a href="#ostaliuredjaji"><div class="card katalog bg-dark text-white">
+  <img src="images/stihlostaliuredjaji.jpg" class="card-img" alt="...">
+  <div class="card-img-overlay">
+    <h5 class="card-title">OSTALI UREDJAJI</h5>
+  </div>
+</div>
+</div>
+</a>
+
+<div class="col-md-4"> 
+<a href="#ulja"><div class="card bg-dark text-white">
+  <img src="..." class="card-img" alt="...">
+  <div class="card-img-overlay">
+    <h5 class="card-title">ULJA I ZAŠTITA</h5>
+  </div>
+</div>
+</div>
+</a>
+
+<div class="col-md-4"> 
+<a href="#zastita"><div class="card bg-dark text-white">
+  <img src="..." class="card-img" alt="...">
+  <div class="card-img-overlay">
+    <h5 class="card-title">DELOVI</h5>
+  </div>
+</div>
+</div>
+</a>
+
+</div>
+
+<div id="motorke" class="firsth">
+<h2>Motorne Testere <hr class="stihlhr"></h2>
+</div>
+
+<div id="katalogslike" class="row">
+<div class="shop-items">
+            <div class="col-md-4" >
+                <div class="shop-item">
+                    <span class="shop-item-title">MS 230</span>
+                    <a href="motorke/motorka1.jpg" data-lightbox="mygallery">
+                    <img class="shop-item-image" src="motorke/motorka1.jpg">
+                    </a> 
+                   <div class="shop-item-details">
+                        <span class="shop-item-price">823.00KM</span>
+                        <img class="btn btn-primary shop-item-button" type="button" class="shopimg" src="images/shopp.png">
+                    </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="shop-item">
+                    <span class="shop-item-title">MS 382</span>
+                    <a href="motorke/motorka2.jpg" data-lightbox="mygallery">
+                    <img class="shop-item-image" src="motorke/motorka2.jpg">
+                    </a> 
+                   <div class="shop-item-details">
+                        <span class="shop-item-price">1399.00KM</span>
+                       <img class="btn btn-primary shop-item-button" type="button" class="shopimg" src="images/shopp.png">
+                    </div>
+                </div>
+              </div>
+                <div class="col-md-4">
+                <div class="shop-item">
+                    <span class="shop-item-title">MS 361</span>
+                    <a href="motorke/motorka3.jpg" data-lightbox="mygallery">
+                    <img class="shop-item-image" src="motorke/motorka3.jpg">
+                    </a> 
+                   <div class="shop-item-details">
+                        <span class="shop-item-price">1396.00KM</span>
+                        <img class="btn btn-primary shop-item-button" type="button" class="shopimg" src="images/shopp.png">
+                    </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="shop-item">
+                    <span class="shop-item-title">MS 441</span>
+                    <a href="motorke/motorka5.jpg" data-lightbox="mygallery">
+                    <img class="shop-item-image" src="motorke/motorka5.jpg">
+                    </a>  
+                  <div class="shop-item-details">
+                        <span class="shop-item-price">1670.00KM</span>
+                        <img class="btn btn-primary shop-item-button" type="button" class="shopimg" src="images/shopp.png">
+                    </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="shop-item">
+                    <span class="shop-item-title">MS 462</span>
+                    <a href="motorke/motorka6.jpg" data-lightbox="mygallery">
+                    <img class="shop-item-image" src="motorke/motorka6.jpg">
+                  </a> 
+                   <div class="shop-item-details">
+                        <span class="shop-item-price">2199.00KM</span>
+                       <img class="btn btn-primary shop-item-button" type="button" class="shopimg" src="images/shopp.png">
+                    </div>
+                </div>
+              </div>
+                <div class="col-md-4">
+                <div class="shop-item">
+                    <span class="shop-item-title">MS 260</span>
+                    <a href="motorke/motorka7.jpg"  data-lightbox="mygallery">
+                    <img class="shop-item-image" src="motorke/motorka7.jpg">
+                  </a> 
+                   <div class="shop-item-details">
+                        <span class="shop-item-price">1205.00KM</span>
+                        <img class="btn btn-primary shop-item-button" type="button" class="shopimg" src="images/shopp.png">
+                    </div>
+                </div>
+              </div>
+                <div class="col-md-4">
+                <div class="shop-item">
+                    <span class="shop-item-title">MS 310</span>
+                    <a href="motorke/motorka8.jpg"  data-lightbox="mygallery">
+                    <img class="shop-item-image" src="motorke/motorka8.jpg">
+                  </a>  
+                  <div class="shop-item-details">
+                        <span class="shop-item-price">1129.00KM</span>
+                        <img class="btn btn-primary shop-item-button" type="button" class="shopimg" src="images/shopp.png">
+                    </div>
+                </div>
+              </div>
+                <div class="col-md-4">
+                <div class="shop-item">
+                    <span class="shop-item-title">MS 291</span>
+                    <a href="motorke/motorka9.jpg" data-lightbox="mygallery">
+                    <img class="shop-item-image" src="motorke/motorka9.jpg">
+                    </a>
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">1198.00KM</span>
+                        <img class="btn btn-primary shop-item-button" type="button" class="shopimg" src="images/shopp.png">
+                    </div>
+                </div>
+              </div>
+                <div class="col-md-4">
+                <div class="shop-item">
+                    <span class="shop-item-title">MS 170</span>
+                    <a href="motorke/motorka10.jpg"  data-lightbox="mygallery">
+                    <img class="shop-item-image" src="motorke/motorka10.jpg">
+                  </a>
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">395.00KM</span>
+                       <img class="btn btn-primary shop-item-button" type="button" class="shopimg" src="images/shopp.png">
+                    </div>
+                </div>
+              </div>
+                <div class="col-md-4">
+                <div class="shop-item">
+                    <span class="shop-item-title">MS 661</span>
+                    <a href="motorke/motorka11.jpg"  data-lightbox="mygallery">
+                    <img class="shop-item-image" src="motorke/motorka11.jpg">
+                  </a>
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">2390.00KM</span>
+                        <img class="btn btn-primary shop-item-button" type="button" class="shopimg" src="images/shopp.png">
+                    </div>
+                </div>
+              </div>
+                <div class="col-md-4">
+                <div class="shop-item">
+                    <span class="shop-item-title">MS 180</span>
+                    <a href="motorke/motorka12.jpg"  data-lightbox="mygallery">
+                    <img class="shop-item-image" src="motorke/motorka12.jpg">
+                  </a>
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">488.00KM</span>
+                        <img class="btn btn-primary shop-item-button" type="button" class="shopimg" src="images/shopp.png">
+                    </div>
+                </div>
+              </div>
+              </div>
+            </div>
+                
+        </section>
         
-      <a href="#ostaliuredjaji"><div class="podelakatalog"><img src="images/OSTALIUREDJAJIPOC.png"><h1>OSTALI UREDJAJI</h1></div></a>
-      <a href="#ulja"><div  class="podelakatalog"><img src="images/ULJE.jpg"><h1>ULJA</h1></div></a>
-      <a href="#zastita"><div  class="podelakatalog"><img src="images/ostalo.jpg"><h1>ZAŠTITA</h1></div></a>
-  </div>
+        <section class="container content-section">
+            <h2 class="section-header">KORPA</h2>
+            <div class="cart-row">
+                <span class="cart-item cart-header cart-column">Proizvod</span>
+                <span class="cart-price cart-header cart-column">Cena</span>
+                <span class="cart-quantity cart-header cart-column">Kolicina</span>
+            </div>
+            <div class="cart-items">
+            </div>
+            <div class="cart-total">
+                <strong class="cart-total-title">Ukupno</strong>
+                <span class="cart-total-price">0KM</span>
+            </div>
+            
+      
+           <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+            Poruci
+            </button>
 
-  <div id="stihlkatalogtraka" class="traka">MOTORNE TESTERE</div>
-    <div class="kinezikatalog">
-      <div><img src="motorke/motorka1.jpg"></div>
-      <div><img src="motorke/motorka2.jpg"></div>
-      <div><img src="motorke/motorka3.jpg"></div>
-      <div><img src="motorke/motorka5.jpg"></div>
-      <div><img src="motorke/motorka6.jpg"></div>
-      <div><img src="motorke/motorka7.jpg"></div>
-      <div><img src="motorke/motorka8.jpg"></div>
-      <div><img src="motorke/motorka9.jpg"></div>
-      <div><img src="motorke/motorka10.jpg"></div>
-      <div><img src="motorke/motorka11.jpg"></div>
-      <div><img src="motorke/motorka12.jpg"></div>
-    </div>
+          <!-- Modal -->
+            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h4 class="modal-title" id="exampleModalLongTitle">Nacin placanja</h4>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                    <h5>Plaćanje pouzećem</h5>
+                      <p>Plaćanje pouzećem podrazumeva plaćanje narudžbenice kuriru prilikom preuzimanja pošiljke. Plaćanje se vrši isključivo gotovinom.</p>
 
-    <div id="trimeri" class="traka">TRIMERI</div>
-    <div class="kinezikatalog">
-      <div><img src="trimeri/trimer1.jpg"></div>
-      <div><img src="trimeri/trimer2.jpg"></div>
-      <div><img src="trimeri/trimer3.jpg"></div>
-      <div><img src="trimeri/trimer4.jpg"></div>
-      <div><img src="trimeri/trimer5.jpg"></div>
-    </div>
-    <div id="kosacice" class="traka">KOSAČICE</div>
-    <div class="kinezikatalog">
-      <div><img src="kosačice/kosacica1.jpg"></div>
-      <div><img src="kosačice/kosacica2.jpg"></div>
-    </div>
-    <div id="ostaliuredjaji" class="traka">OSTALI UREDJAJI</div>
-    <div class="kinezikatalog">
-      <div><img src="ostaliuredjaji/ostali1.jpg"></div>
-      <div><img src="ostaliuredjaji/ostali2.jpg"></div>
-      <div><img src="ostaliuredjaji/ostali3.jpg"></div>
-      <div><img src="ostaliuredjaji/ostali4.jpg"></div>
-      <div><img src="ostaliuredjaji/ostali5.jpg"></div>
-      <div><img src="ostaliuredjaji/ostali7.jpg"></div>
-      <div><img src="ostaliuredjaji/ostali9.jpg"></div>
-      <div><img src="ostaliuredjaji/ostali10.jpg"></div>
-      <div><img src="ostaliuredjaji/ostali11.jpg"></div>
-    </div>
-    <div id="ulja" class="traka">ULJA</div>
-    <div class="kinezikatalog">
-      <div><img src="ostalo/ulja/ulja1.jpg"></div>
-      <div><img src="ostalo/ulja/ulja3.jpg"></div>
-      <div><img src="ostalo/ulja/ulja4.jpg"></div>
-      <div><img src="ostalo/ulja/ulja5.jpg"></div>
-      <div><img src="ostalo/ulja/ulja6.jpg"></div>
-      <div><img style="background-color: white;"src="ostalo/ulja/ulja7.png"></div>
-      <div><img src="ostalo/ulja/ulja9.jpg"></div>
-      <div><img src="ostalo/ulja/ulja10.jpg"></div>
-      <div><img src="ostalo/ulja/ulja11.jpg"></div>
-      <div><img src="ostalo/ulja/ulja12.jpg"></div>
-      <div><img src="ostalo/ulja/ulja13.jpg"></div>
-      <div><img src="ostalo/ulja/ulja14.jpg"></div>
-      <div><img src="ostalo/ulja/ulja15.jpg"></div>
-      <div><img src="ostalo/ulja/ulja16.jpg"></div>
-      <div><img src="ostalo/ulja/ulja17.jpg"></div>
-    </div>
-    <div id="zastita" class="traka">ZAŠTITA</div>
-    <div class="kinezikatalog">
-      <div><img src="ostalo/zastita/zastita1.jpg"></div>
-      <div><img src="ostalo/zastita/zastita2.jpg"></div>
-      <div><img src="ostalo/zastita/zastita3.jpg"></div>
-      <div><img src="ostalo/zastita/zastita4.jpg"></div>
-      <div><img src="ostalo/zastita/zastita5.jpg"></div>
-      <div><img src="ostalo/zastita/zastita6.jpg"></div>
-      <div><img src="ostalo/zastita/zastita7.jpg"></div>
-      <div><img src="ostalo/zastita/zastita8.jpg"></div>
-    </div>
-    
+                    <h5>Plaćanje platnim karticama</h5>
+                      <p>Svoju porudžbinu možete platiti korišćenjem Visa, Mastercard, Maestro ili American Express.karticama, izdatim od strane domaće banke. Kartica mora biti odobrena od strane banke izdavaoca za online (Internet) plaćanje.</p>
+                    </div>
+                    <div class="modal-footer">
+                    
+                    <button type="button"  onclick="newpageshop()" class="btn btn-primary">Pouzecem</button>
+                   <span class="d-inline-block" tabindex="0" data-toggle="tooltip" title="Izrada ove opcije je u toku molimo Vas za malo strpljenja">
+                    <button class="btn btn-primary" style="pointer-events: none;" type="button" disabled>Karticom</button>
+                    </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </section>
 
-<footer> 
-
-
-    <div class="container gridfootercontact">
-      <div><img src="images/lokacija.png"></div>
-      <div><p>Zvornik,Karakaj,Meterize br22 75400</p></div>
-      <div><img src="images/telefon.png"></div>
-      <div><p>+38765623953</p></div>
-      <div><img src="images/telefonstari.png"></div>
-      <div><p>056 263-176</p></div>
-      <div><img src="images/MAIL.png"></div>
-      <div><a href="https://mail.google.com/" target="_blank"><p>contactsumooprema@gmail.com </p></a></div>
+   <div class="footer-dark">
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-md-3 item">
+                        <h3>Link do naših partnera</h3>
+                        <ul>
+                            <li><a href="#">Stihl</a></li>
+                            <li><a href="#">Husqvarna</a></li>
+                            <li><a href="#">Tropic</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 col-md-3 item">
+                        <h3>Brzi linkovi</h3>
+                        <ul>
+                            <li><a href="stihlkatalog.html">Stihl</a></li>
+                            <li><a href="husqvarna.html">Husqvarna</a></li>
+                            <li><a href="ribarica.html">Ribarnica</a></li>
+                        </ul>
+                    </div>  
+                    <div class="col-md-6 item text">
+                        <h3>D.O.O ŠUMOOPREMA</h3>
+                        <p style="text-align: justify; line-height: 20px;" >Ovlašteni zastupnik STIHL i HUSQVARNA motornih uredjaja. Naša poslovnica vrši prodaju i servis svih vrsta motornih uredjaja, uvijek raspolaže svim rezervnim dijelovima proizvođača STIHL i HUSQVARNA. Sertifikovan serviser, profesionalna usluga i pristupačna cijena.
+                        U sklopu naše poslovnice je i ribarnica koja uvijek raspolaže sviježom i smrznutom ribom. Pored maloprodaje ribarnica vrši veleprodaju žive ribe, pastrmke i šarana.</p> <br><p style="color:white; font-weight: 900;"> Radno vreme ponedeljak - subota od 07h do 16h</p>
+                    </div>
+                    <div class="col item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a></div>
+                </div>
+                <p class="copyright">Šumooprema © 2021</p>
+            </div>
+        </footer>
     </div>
-
-    <div class="container gridfooterlogo">
-      <div><img src="images/logomara.png"></div>
-      <div><p>D.O.O Šumooprema Zvornik <br>&copy All rights reserved</p></div>
-    </div>
-
-    <div class="container gridfooternav">
-      <h2>Brzi linkovi</h2>
-      <div id="footernav">
-      <div><a href="index.html"><p>&#8921; Početna</p></a></div>
-      <div><a href="KATALOG.html"><p>&#8921; Katalog</p></a></div>
-      <div><a href="ONAMA.html"><p>&#8921; O nama</p></a></div>
-      <div><a href="RIBARNICA.html"><p>&#8921; Ribarnica</p></a></div>
-      <div><a href="STIHLKATALOG.html"><p>&#8921; Stihl katalog</p></a></div>
-      <div><a href="HUSQVARNA.html"><p>&#8921; Husqvarna katalog</p></a></div>
-     </div>
-   </div>
-
-   
-    <div class="container radnovremeipartneri">
-     <div id="radnovreme">
-     <div><h3>Servis motorki</h3></div>
-     <div><p>Ponedeljak - Subota 07h - 16h</p></div>
-     <div><h3>Ribarnica</h3></div>
-     <div><p>Ponedeljak - Subota 07h - 16h</p></div>
-      </div>
-     <div class="container gridfooterslike">
-     <div>Direktni linkovi do naših partnera:</div>
-     <div class="container foterslikerows">
-      <div><a href="https://www.stihl.com/default.aspx"><img src="images/stihll.png"></a></div>
-      <div><a href="https://www.husqvarnagroup.com/"><img src="images/hus.jpg"></a></div>
-      <div><a href="http://www.dolmar.com/"><img src="images/dolmar.jpg"></a></div>
-      <div><a><img src="images/ALPINJA.png"></a></div>
-     </div>
-   </div>
-     
-    </div>
-</footer>  
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+   <!-- JBOX -->
+  </body>
 </html>
-
