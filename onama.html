@@ -39,7 +39,7 @@
     <body>
       <nav class="navbar navbar-expand-lg navbar-light ">
         <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
+       <a class="navbar-brand" href="index.html"><img id="slikanav" src="images/stihll.png"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
         </button>
@@ -48,12 +48,8 @@
         <li class="nav-item">
         <a id="link" class=" nav-link" aria-current="page" href="index.html">POCETNA</a>
         </li>
-        <li class="nav-item dropdown">
-        <a id="link" class=" nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">KATALOG</a>
-          <ul style="background-color: #f46717;" class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <li><a class="dropdown-item" href="stihlkatalog.html">STIHL</a></li>
-            <li><a class="dropdown-item" href="HUSQVARNA.html">HUSQVARNA</a></li>
-          </ul>
+        <li class="nav-item">
+        <a id="link" class=" nav-link" href="stihlkatalog.html" aria-current="page">KATALOG</a>
         </li>
         <li class="nav-item">
           <a id="link" class=" nav-link" href="onama.html">O NAMA</a>
@@ -105,7 +101,7 @@
      <div class="d col-md-4">
     
         <div class="col-md-12"><img src="images/MAIL.png"></div>
-        <div class="col-md-12"><a href="">contactsumooprema@gmail.com</a></div>
+        <div class="col-md-12"><a target="_blank" href="mailto: lukaeric8@gmail.com = Feedback&body = Message">contactsumooprema@gmail.com</a></div>
 
 
 
@@ -126,28 +122,28 @@
                 </span>
 
                 <div class="wrap-input100 validate-input" data-validate="Name is required">
-                    <input class="input100" id="name" type="text" name="name" placeholder="Ime">
+                    <input required="" class="input100" id="name" type="text" name="name" placeholder="Ime">
                     <label class="label-input100" for="name">
                         <span class="lnr lnr-user"></span>
                     </label>
                 </div>
 
                 <div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
-                    <input class="input100" id="email" type="text" name="email" placeholder="Email">
+                    <input required="" class="input100" id="email" type="text" name="email" placeholder="Email">
                     <label class="label-input100" for="email">
                         <span class="lnr lnr-envelope"></span>
                     </label>
                 </div>
 
                 <div class="wrap-input100 validate-input" data-validate = "Phone is required">
-                    <input class="input100" id="phone" type="text" name="phone" placeholder="Telefon">
+                    <input  required="" class="input100" id="phone" type="number" name="phone" placeholder="Telefon">
                     <label class="label-input100" for="phone">
                         <span class="lnr lnr-phone-handset"></span>
                     </label>
                 </div>
 
                 <div class="wrap-input100 validate-input" data-validate = "Message is required">
-                    <textarea class="input100" name="message" placeholder="Poruka"></textarea>
+                    <textarea required="" class="input100" name="message" placeholder="Poruka"></textarea>
                 </div>
 
                 
@@ -229,6 +225,5 @@
 
   gtag('config', 'UA-23581568-13');
 </script>
-
     </body>
 </html>

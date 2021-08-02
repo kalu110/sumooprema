@@ -15,17 +15,32 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
         <meta name="viewport" content="width=device-width" />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+       <!-- drugi jbox -->
+       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
         <title>Šumooprema Zvornik - Početna stranica</title>
         <meta charset="utf-8" />
         <script src="main.js"></script>
         <script src="contact.js"></script>
+        <script src="store.js"></script>
+        <script src="contactform.php"></script>
+        <script src="store.php"></script>
+        <script src="book.js"></script>
         <script src="lightbox-plus-jquery.min.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     </head>
     <body style="background-image: none;">
-        <nav class="navbar navbar-expand-lg navbar-light ">
+        <script>
+            localStorage.clear()
+        </script>
+        <nav class="navbar sticky-top navbar-expand-lg navbar-light ">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navbar</a>
+    <a class="navbar-brand" href="index.html"><img id="slikanav" src="images/stihll.png"></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -34,14 +49,10 @@
         <li class="nav-item">
           <a id="link" class="nav-link" aria-current="page" href="index.html">POCETNA</a>
         </li>
-        <li class="nav-item dropdown">
-          <a id="link" class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        <li class="nav-item">
+          <a id="link" class="nav-link" href="stihlkatalog.html" aria-current="page" >
             KATALOG
           </a>
-          <ul style="background-color: #f46717;" class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <li><a class="dropdown-item" href="stihlkatalog.html">STIHL</a></li>
-            <li><a class="dropdown-item" href="HUSQVARNA.html">HUSQVARNA</a></li>
-          </ul>
         </li>
         <li class="nav-item">
           <a id="link" class="nav-link" href="onama.html">O NAMA</a>
@@ -53,1053 +64,1106 @@
     </div>
   </div>
 </nav>
-<div id="slikakatalog" class="col-md-12"><p>STIHL</p></div>
 
-<div id="stihl" class="row">
 
-<div class="col-md-4"> 
-<a href="#motorke"><div class="card bg-dark text-white">
-  <img src="images/stihlmotorka.jpg" class="card-img" alt="...">
-  <div class="card-img-overlay">
-    <h5 class="card-title">MOTORNE TESTERE</h5>
-  </div>
-</div>
-</div>
-</a>
+    
 
-<div class="col-md-4"> 
-<a href="#trimeri"><div class="card bg-dark text-white">
-  <img src="images/stihltrimer.jpg" class="card-img" alt="...">
-  <div class="card-img-overlay">
-    <h5 class="card-title">TRIMERI</h5>
-  </div>
-</div>
-</div>
-</a>
 
-<div class="col-md-4"> 
-<a href="#kosacice"><div class="card bg-dark text-white">
-  <img src="images/stihlkosacica.jpg" class="card-img" alt="...">
-  <div class="card-img-overlay">
-    <h5 class="card-title">KOSACICE</h5>
-  </div>
-</div>
-</div>
-</a>
 
-<div class="col-md-4"> 
-<a href="#ostaliuredjaji"><div class="card katalog bg-dark text-white">
-  <img src="images/stihlostaliuredjaji.jpg" class="card-img" alt="...">
-  <div class="card-img-overlay">
-    <h5 class="card-title">OSTALI UREDJAJI</h5>
-  </div>
-</div>
-</div>
-</a>
 
-<div class="col-md-4"> 
-<a href="#ulja"><div class="card bg-dark text-white">
-  <img src="..." class="card-img" alt="...">
-  <div class="card-img-overlay">
-    <h5 class="card-title">ULJA I ZAŠTITA</h5>
-  </div>
-</div>
-</div>
-</a>
 
-<div class="col-md-4"> 
-<a href="#zastita"><div class="card bg-dark text-white">
-  <img src="..." class="card-img" alt="...">
-  <div class="card-img-overlay">
-    <h5 class="card-title">DELOVI</h5>
-  </div>
-</div>
-</div>
-</a>
 
-</div>
 
+
+
+
+
+
+<div style="width:100%;margin-left: auto;margin-right: auto;" class="row">
+<div class="col-sm-4 col-md-5"><hr  class="stihllinija"></div>
+<div class="col-sm-4 col-md-2"><h2 class="stihluredjaji">STIHL</h2></div>
+<div class="col-sm-4 col-md-5"><hr class="stihllinija"></div>
+</div>
 <div id="motorke" class="firsth">
 <h2>Motorne Testere <hr class="stihlhr"></h2>
 </div>
+<div id="katalogslike" class="row">
+<div class="shop-items">
+            <div id="pomeraj" class="col-md-3 col-sm-6" >
+                <div class="shop-item">
+                    <a href="produkti/motorke/ms170.html" target="_blank">
+                    <img class="shop-item-image" src="motorke/motorka1.jpg">
+                    </a> 
+                     <span   class="shop-item-title">MS 170</span>
+                   <div class="shop-item-details">
+                        <span  class="shop-item-price">399.00KM</span>
+                        <img class="btn btn-primary shop-item-button" type="button" class="shopimg" src="images/shopp.png">
+                    </div>
+                </div>
+              </div>
+              <div id="pomeraj" class="col-md-3 col-sm-6">
+                <div class="shop-item">
+                    <a href="motorke/motorka2.jpg" data-lightbox="mygallery">
+                    <img class="shop-item-image" src="motorke/motorka2.jpg">
+                    </a> 
+                    <span class="shop-item-title">MS 180</span>
+                   <div class="shop-item-details">
+                        <span class="shop-item-price">499.00KM</span>
+                       <img class="btn btn-primary shop-item-button" type="button" class="shopimg" src="images/shopp.png">
+                    </div>
+                </div>
+              </div>
+                <div id="pomeraj" class="col-md-3 col-sm-6">
+                <div class="shop-item">
+                    <a href="motorke/motorka3.jpg" data-lightbox="mygallery">
+                    <img class="shop-item-image" src="motorke/motorka3.jpg">
+                    </a> 
+                    <span class="shop-item-title">MS 230</span>
+                   <div class="shop-item-details">
+                    <span class="shop-item-price">823.00KM</span>
+                        <img class="btn btn-primary shop-item-button" type="button" class="shopimg" src="images/shopp.png">
+                    </div>
+                </div>
+              </div>
+              <div id="pomeraj" class="col-md-3 col-sm-6">
+                <div class="shop-item">
+                    
+                    <a href="motorke/motorka5.jpg" data-lightbox="mygallery">
+                    <img class="shop-item-image" src="motorke/motorka5.jpg">
+                    </a>
+                    <span class="shop-item-title">MS 291</span>  
+                  <div class="shop-item-details">
+                        <span class="shop-item-price">1234.00KM</span>
+                        <img class="btn btn-primary shop-item-button" type="button" class="shopimg" src="images/shopp.png">
+                    </div>
+                </div>
+              </div>
+              <div id="pomeraj"  class="col-md-3 col-sm-6">
+                <div class="shop-item">
+                    
+                    <a href="motorke/motorka6.jpg" data-lightbox="mygallery">
+                    <img class="shop-item-image" src="motorke/motorka6.jpg">
+                  </a> 
+                  <span class="shop-item-title">MS 310</span>
+                   <div class="shop-item-details">
+                        <span class="shop-item-price">1129.00KM</span>
+                       <img class="btn btn-primary shop-item-button" type="button" class="shopimg" src="images/shopp.png">
+                    </div>
+                </div>
+              </div>
+                <div id="pomeraj" class="col-md-3 col-sm-6">
+                <div class="shop-item">
+                   
+                    <a href="motorke/motorka7.jpg"  data-lightbox="mygallery">
+                    <img class="shop-item-image" src="motorke/motorka7.jpg">
+                  </a>
+                   <span class="shop-item-title">MS 361</span> 
+                   <div class="shop-item-details">
+                        <span class="shop-item-price">1398.00KM</span>
+                        <img class="btn btn-primary shop-item-button" type="button" class="shopimg" src="images/shopp.png">
+                    </div>
+                </div>
+              </div>
+                <div id="pomeraj" class="col-md-3 col-sm-6">
+                <div class="shop-item">
+                   
+                    <a href="motorke/motorka8.jpg"  data-lightbox="mygallery">
+                    <img class="shop-item-image" src="motorke/motorka8.jpg">
+                  </a>
+                   <span class="shop-item-title">MS 382</span>  
+                  <div class="shop-item-details">
+                        <span class="shop-item-price">1398.00KM</span>
+                        <img class="btn btn-primary shop-item-button" type="button" class="shopimg" src="images/shopp.png">
+                    </div>
+                </div>
+              </div>
+                <div id="pomeraj" class="col-md-3 col-sm-6">
+                <div class="shop-item">
+                    
+                    <a href="motorke/motorka9.jpg" data-lightbox="mygallery">
+                    <img class="shop-item-image" src="motorke/motorka9.jpg">
+                    </a>
+                    <span class="shop-item-title">MS 441</span>
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">1198.00KM</span>
+                        <img class="btn btn-primary shop-item-button" type="button" class="shopimg" src="images/shopp.png">
+                    </div>
+                </div>
+              </div>
+                <div id="pomeraj" class="col-md-3 col-sm-6">
+                <div class="shop-item">
+                    
+                    <a href="motorke/motorka10.jpg"  data-lightbox="mygallery">
+                    <img class="shop-item-image" src="motorke/motorka10.jpg">
+                  </a>
+                  <span class="shop-item-title">MS 462</span>
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">2198.00KM</span>
+                       <img class="btn btn-primary shop-item-button" type="button" class="shopimg" src="images/shopp.png">
+                    </div>
+                </div>
+              </div>
+                <div id="pomeraj" class="col-md-3 col-sm-6">
+                <div class="shop-item">
+                    
+                    <a href="motorke/motorka11.jpg"  data-lightbox="mygallery">
+                    <img class="shop-item-image" src="motorke/motorka11.jpg">
+                  </a>
+                  <span class="shop-item-title">MS 661</span>
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">2850.00KM</span>
+                        <img class="btn btn-primary shop-item-button" type="button" class="shopimg" src="images/shopp.png">
+                    </div>
+                </div>
+              </div>
+              <div id="pomeraj" class="col-md-3 col-sm-6">
+               
+              </div>
+              <div id="pomeraj" class="col-md-3 col-sm-6">
+                <div class="shop-item">
+               
+              </div>
+                
+              </div>
+            </div>
+
+                </div>
+                <h2 class="husuredjaji">HUSQVARNA <hr class="huslinija"></h2>
+               
+
+
+               <div id="katalogslike" class="row">
+                <div class="shop-items">
+            <div id="pomeraj" class="col-md-3 col-sm-6" >
+                <div class="shop-item">
+                    <a href="motorke/husqvarna/H120.jpg" data-lightbox="mygallery">
+                    <img class="shop-item-image" src="motorke/husqvarna/H120.jpg">
+                    </a> 
+                     <span   class="shop-item-title">H 120</span>
+                   <div class="shop-item-details">
+                        <span  class="shop-item-price">429.00KM</span>
+                        <img class="btn btn-primary shop-item-button" type="button" class="shopimg" src="images/shopp.png">
+                    </div>
+                </div>
+              </div>
+              <div id="pomeraj" class="col-md-3 col-sm-6">
+                <div class="shop-item">
+                    <a href="motorke/husqvarna/H130.jpg" data-lightbox="mygallery">
+                    <img class="shop-item-image" src="motorke/husqvarna/H130.jpg">
+                    </a> 
+                    <span class="shop-item-title">H 130</span>
+                   <div class="shop-item-details">
+                        <span class="shop-item-price">519.00KM</span>
+                       <img class="btn btn-primary shop-item-button" type="button" class="shopimg" src="images/shopp.png">
+                    </div>
+                </div>
+              </div>
+                <div id="pomeraj" class="col-md-3 col-sm-6">
+                <div class="shop-item">
+                    <a href="motorke/husqvarna/H135.jpg" data-lightbox="mygallery">
+                    <img class="shop-item-image" src="motorke/husqvarna/H135.jpg">
+                    </a> 
+                    <span class="shop-item-title">H 135</span>
+                   <div class="shop-item-details">
+                    <span class="shop-item-price">639.00KM</span>
+                        <img class="btn btn-primary shop-item-button" type="button" class="shopimg" src="images/shopp.png">
+                    </div>
+                </div>
+              </div>
+              <div id="pomeraj" class="col-md-3 col-sm-6">
+                <div class="shop-item">
+                    
+                    <a href="motorke/husqvarna/H365.jpg" data-lightbox="mygallery">
+                    <img class="shop-item-image" src="motorke/husqvarna/H365.jpg">
+                    </a>
+                    <span class="shop-item-title">H 365</span>  
+                  <div class="shop-item-details">
+                        <span class="shop-item-price">1409.00KM</span>
+                        <img class="btn btn-primary shop-item-button" type="button" class="shopimg" src="images/shopp.png">
+                    </div>
+                </div>
+              </div>
+              <div id="pomeraj"  class="col-md-3 col-sm-6">
+                <div class="shop-item">
+                    
+                    <a href="motorke/husqvarna/H372XP.jpg" data-lightbox="mygallery">
+                    <img class="shop-item-image" src="motorke/husqvarna/H372XP.jpg">
+                  </a> 
+                  <span class="shop-item-title">H 372 XP</span>
+                   <div class="shop-item-details">
+                        <span class="shop-item-price">1619.00KM</span>
+                       <img class="btn btn-primary shop-item-button" type="button" class="shopimg" src="images/shopp.png">
+                    </div>
+                </div>
+              </div>
+                <div id="pomeraj" class="col-md-3 col-sm-6">
+                <div class="shop-item">
+                   
+                    <a href="motorke/husqvarna/H420.jpg"  data-lightbox="mygallery">
+                    <img class="shop-item-image" src="motorke/husqvarna/H420.jpg">
+                  </a>
+                   <span class="shop-item-title">H 420</span> 
+                   <div class="shop-item-details">
+                        <span class="shop-item-price">519.00KM</span>
+                        <img class="btn btn-primary shop-item-button" type="button" class="shopimg" src="images/shopp.png">
+                    </div>
+                </div>
+              </div>
+                <div id="pomeraj" class="col-md-3 col-sm-6">
+                <div class="shop-item">
+                   
+                    <a href="motorke/husqvarna/H435.jpg"  data-lightbox="mygallery">
+                    <img class="shop-item-image" src="motorke/husqvarna/H435.jpg">
+                  </a>
+                   <span class="shop-item-title">H 435</span>  
+                  <div class="shop-item-details">
+                        <span class="shop-item-price">789.00KM</span>
+                        <img class="btn btn-primary shop-item-button" type="button" class="shopimg" src="images/shopp.png">
+                    </div>
+                </div>
+              </div>
+                <div id="pomeraj" class="col-md-3 col-sm-6">
+                <div class="shop-item">
+                    
+                    <a href="motorke/husqvarna/H440.jpg" data-lightbox="mygallery">
+                    <img class="shop-item-image" src="motorke/husqvarna/H440.jpg">
+                    </a>
+                    <span class="shop-item-title">H 440 II</span>
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">849.00KM</span>
+                        <img class="btn btn-primary shop-item-button" type="button" class="shopimg" src="images/shopp.png">
+                    </div>
+                </div>
+              </div>
+                <div id="pomeraj" class="col-md-3 col-sm-6">
+                <div class="shop-item">
+                    
+                    <a href="motorke/husqvarna/H445.jpg"  data-lightbox="mygallery">
+                    <img class="shop-item-image" src="motorke/husqvarna/H445.jpg">
+                  </a>
+                  <span class="shop-item-title">H 445 II</span>
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">899.00KM</span>
+                       <img class="btn btn-primary shop-item-button" type="button" class="shopimg" src="images/shopp.png">
+                    </div>
+                </div>
+              </div>
+                <div id="pomeraj" class="col-md-3 col-sm-6">
+                <div class="shop-item">
+                    
+                    <a href="motorke/husqvarna/H450II.jpg"  data-lightbox="mygallery">
+                    <img class="shop-item-image" src="motorke/husqvarna/H450II.jpg">
+                  </a>
+                  <span class="shop-item-title">H 450 II</span>
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">979.00KM</span>
+                        <img class="btn btn-primary shop-item-button" type="button" class="shopimg" src="images/shopp.png">
+                    </div>
+                </div>
+              </div>
+              <div id="pomeraj" class="col-md-3 col-sm-6">
+                <div class="shop-item">
+                    
+                    <a href="motorke/husqvarna/H460R.jpg"  data-lightbox="mygallery">
+                    <img class="shop-item-image" src="motorke/husqvarna/H460R.jpg">
+                  </a>
+                  <span class="shop-item-title">H 460 R</span>
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">2850.00KM</span>
+                        <img class="btn btn-primary shop-item-button" type="button" class="shopimg" src="images/shopp.png">
+                    </div>
+                </div>
+              </div>
+              <div id="pomeraj" class="col-md-3 col-sm-6">
+                <div class="shop-item">
+                    
+                    <a href="motorke/husqvarna/H545.jpg"  data-lightbox="mygallery">
+                    <img class="shop-item-image" src="motorke/husqvarna/H545.jpg">
+                  </a>
+                  <span class="shop-item-title">H 545</span>
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">1299.00KM</span>
+                        <img class="btn btn-primary shop-item-button" type="button" class="shopimg" src="images/shopp.png">
+                    </div>
+                </div>
+              </div>
+              <div id="pomeraj" class="col-md-3 col-sm-6">
+                <div class="shop-item">
+                    
+                    <a href="motorke/husqvarna/H550XP.jpg"  data-lightbox="mygallery">
+                    <img class="shop-item-image" src="motorke/husqvarna/H550XP.jpg">
+                  </a>
+                  <span class="shop-item-title">H 550 XP</span>
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">1519.00KM</span>
+                        <img class="btn btn-primary shop-item-button" type="button" class="shopimg" src="images/shopp.png">
+                    </div>
+                </div>
+              </div>
+              <div id="pomeraj" class="col-md-3 col-sm-6">
+                <div class="shop-item">
+                    
+                    <a href="motorke/husqvarna/H555.jpg"  data-lightbox="mygallery">
+                    <img class="shop-item-image" src="motorke/husqvarna/H555.jpg">
+                  </a>
+                  <span class="shop-item-title">H 555</span>
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">1529.00KM</span>
+                        <img class="btn btn-primary shop-item-button" type="button" class="shopimg" src="images/shopp.png">
+                    </div>
+                </div>
+              </div>
+              <div id="pomeraj" class="col-md-3 col-sm-6">
+                <div class="shop-item">
+                    
+                    <a href="motorke/husqvarna/H562XP.jpg"  data-lightbox="mygallery">
+                    <img class="shop-item-image" src="motorke/husqvarna/H562XP.jpg">
+                  </a>
+                  <span class="shop-item-title">H 562 XP</span>
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">1659.00KM</span>
+                        <img class="btn btn-primary shop-item-button" type="button" class="shopimg" src="images/shopp.png">
+                    </div>
+                </div>
+              </div>
+              <div id="pomeraj" class="col-md-3 col-sm-6">
+                <div class="shop-item">
+                    
+                    <a href="motorke/husqvarna/H572XP.jpg"  data-lightbox="mygallery">
+                    <img class="shop-item-image" src="motorke/husqvarna/H572XP.jpg">
+                  </a>
+                  <span class="shop-item-title">H 572 XP</span>
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">2139.00KM</span>
+                        <img class="btn btn-primary shop-item-button" type="button" class="shopimg" src="images/shopp.png">
+                    </div>
+                </div>
+              </div>
+              <div id="pomeraj" class="col-md-3 col-sm-6">
+               
+              </div>
+              <div id="pomeraj" class="col-md-3 col-sm-6">
+                <div class="shop-item">
+               
+              </div>
+                
+              </div>
+            </div>
+        </div>
+        </section>
+
+
+
+
+        <div id="trimeri" class="firsth" style="margin-top:10px;">
+<h2>Trimeri<hr class="stihlhr"></h2>
+</div>
+<h2 class="stihluredjaji">STIHL <hr class="stihllinija"></h2>
 
 <div id="katalogslike" class="row">
-            <div class="kat col-md-4"><a href="motorke/motorka1.jpg" data-lightbox="mygallery">
-            <div class="card" style="width: 16rem;">
-            <img src="motorke/motorka1.jpg" class="card-img-top" alt="...">
-            </a>
-            <div class="card-body">
-            <h5 class="card-title">MS 230</h5>
-            <button class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample">
-            Saznajte više
-            </button>
-            <div class="collapse" id="collapseExample1">
-            <div class="textkat ">
-            Snažna motorna testera sa unapređenim filterom za vazduh i antivibracionim sistemom u veštim rukama postaje nenadmašan saveznik u sečenju drva za ogrev ili gradnju. Idealno podmazivanje lanca sa STIHL Ematic sistemom.
-            </div>
-            </div>
-            </div>
-            </div>
-            </div>
-            
-            <div class="kat col-md-4"><a href="motorke/motorka2.jpg" data-lightbox="mygallery">
-            <div class="card" style="width: 16rem;">
-            <img src="motorke/motorka2.jpg" class="card-img-top" alt="...">
-            </a>
-            <div class="card-body">
-            <h5 class="card-title">MS 382</h5>
-            <button class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample">
-            Saznajte više
-            </button>
-            <div class="collapse" id="collapseExample2">
-            <div class="textkat ">
-            Odlična za seču u šumi malog i srednjeg intenziteta. Bočni zatezač  lanca za bezbedno i jednostavno zatezanje lanca, zatvarač rezervoara bez alata radi jednostavnog i bezbednog punjenja gorivom.
-            </div>
-            </div>
-            </div>
-            </div>
-            </div>
-            
-            <div class="kat col-md-4"><a href="motorke/motorka3.jpg" data-lightbox="mygallery">
-            <div class="card" style="width: 16rem;">
-            <img src="motorke/motorka3.jpg" class="card-img-top" alt="...">
-            </a>
-            <div class="card-body">
-            <h5 class="card-title">MS 361</h5>
-            <button class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false" aria-controls="collapseExample">
-            Saznajte više
-            </button>
-            <div class="collapse" id="collapseExample3">
-            <div class="textkat ">
-            U rukama pravog profesionalca ova testera će savladati sve izazove koje šumarski posao nosi sa sobom. Olakšano startovanje motora
-            pomoću ElastoStarta i dekompresionog ventila kao i rukovanje uz moćan antivibracioni sistem. Uljna pumpa sa regulacijom podmazivanja lanca za različite uslove rada.
-            </div>
-            </div>
-            </div>
-            </div>
-            </div>
+<div class="shop-items">
+            <div id="pomeraj" class="col-md-3 col-sm-6" >
+                <div class="shop-item">
+                    <a href="trimeri/Trimer1.jpg" data-lightbox="mygallery">
+                    <img class="shop-item-image" src="trimeri/Trimer1.jpg">
+                    </a> 
+                     <span   class="shop-item-title">FS 38</span>
+                   <div class="shop-item-details">
+                        <span  class="shop-item-price">299.00KM</span>
+                        <img class="btn btn-primary shop-item-button" type="button" class="shopimg" src="images/shopp.png">
+                    </div>
+                </div>
+              </div>
+              <div id="pomeraj" class="col-md-3 col-sm-6">
+                <div class="shop-item">
+                    <a href="trimeri/Trimer2.jpg" data-lightbox="mygallery">
+                    <img class="shop-item-image" src="trimeri/Trimer2.jpg">
+                    </a> 
+                    <span class="shop-item-title">FS 55</span>
+                   <div class="shop-item-details">
+                        <span class="shop-item-price">509.00KM</span>
+                       <img class="btn btn-primary shop-item-button" type="button" class="shopimg" src="images/shopp.png">
+                    </div>
+                </div>
+              </div>
+                <div id="pomeraj" class="col-md-3 col-sm-6">
+                <div class="shop-item">
+                    <a href="trimeri/Trimer3.jpg" data-lightbox="mygallery">
+                    <img class="shop-item-image" src="trimeri/Trimer3.jpg">
+                    </a> 
+                    <span class="shop-item-title">FS 120</span>
+                   <div class="shop-item-details">
+                    <span class="shop-item-price">871.00KM</span>
+                        <img class="btn btn-primary shop-item-button" type="button" class="shopimg" src="images/shopp.png">
+                    </div>
+                </div>
+              </div>
+              <div id="pomeraj" class="col-md-3 col-sm-6">
+                <div class="shop-item">
+                    
+                    <a href="trimeri/Trimer4.jpg" data-lightbox="mygallery">
+                    <img class="shop-item-image" src="trimeri/Trimer4.jpg">
+                    </a>
+                    <span class="shop-item-title">FS 350</span>  
+                  <div class="shop-item-details">
+                        <span class="shop-item-price">1307.00KM</span>
+                        <img class="btn btn-primary shop-item-button" type="button" class="shopimg" src="images/shopp.png">
+                    </div>
+                </div>
+              </div>
+              <div id="pomeraj"  class="col-md-3 col-sm-6">
+                <div class="shop-item">
+                    
+                    <a href="trimeri/Trimer5.jpg" data-lightbox="mygallery">
+                    <img class="shop-item-image" src="trimeri/Trimer5.jpg">
+                  </a> 
+                  <span class="shop-item-title">FS 450</span>
+                   <div class="shop-item-details">
+                        <span class="shop-item-price">1720.00KM</span>
+                       <img class="btn btn-primary shop-item-button" type="button" class="shopimg" src="images/shopp.png">
+                    </div>
+                </div>
+              </div>
+              <div id="pomeraj"  class="col-md-3 col-sm-6">
+               
+              </div>
+              <div id="pomeraj"  class="col-md-3 col-sm-6">
+              
+              </div>
+              <div id="pomeraj"  class="col-md-3 col-sm-6">
+               
+              </div>
+              <h2 class="husuredjaji">HUSQVARNA <hr class="huslinija"></h2>
 
-            <div class="kat col-md-4"><a href="motorke/motorka5.jpg" data-lightbox="mygallery">
-            <div class="card" style="width: 16rem;">
-            <img src="motorke/motorka5.jpg" class="card-img-top" alt="...">
-            </a>
-            <div class="card-body">
-            <h5 class="card-title">MS 441</h5>
-            <button class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample4" role="button" aria-expanded="false" aria-controls="collapseExample">
-            Saznajte više
-            </button>
-            <div class="collapse" id="collapseExample4">
-            <div class="textkat ">
-            Izdržljiva i moćna, a štedljiva i dugovečna motorna testera zahvaljujći 2-MIX motoru i HD2 filteru vazduha koji zadržava i
-            najfiniju prašinu. Markirna linija na telu testere za jednostavnu kontrolu pravca pada stabla, uljna pumpa sa regulacijom podmazivanja lanca za različite uslove rada. Idealna za seču srednjeg do jakog intenziteta.
-            </div>
-            </div>
-            </div>
-            </div>
-            </div>
 
-            <div class="kat col-md-4"><a href="motorke/motorka6.jpg" data-lightbox="mygallery">
-            <div class="card" style="width: 16rem;">
-            <img src="motorke/motorka6.jpg" class="card-img-top" alt="...">
-            </a>
-            <div class="card-body">
-            <h5 class="card-title">MS 462</h5>
-            <button class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample5" role="button" aria-expanded="false" aria-controls="collapseExample">
-            Saznajte više
-            </button>
-            <div class="collapse" id="collapseExample5">
-            <div class="textkat ">
-            Najlakša testera visokih performansi kubikaže od 70 cm³. Veoma pokretljiva uz izuzetno ubrzanje. Za obaranje i sečenje grana u seči srednjeg i visokog intenziteta. Opremljena HD2-filterom sa veoma dobrim učinkom filtriranja. Pričvršćene navrtke na poklopcu lančanika olakšavaju skidanje lanca, zatvarači rezervoara bez alata za jednostavno i bezbedno punjenje gorivom, štedljivi 2-MIX motor.
-            </div>
-            </div>
-            </div>
-            </div>
-            </div>
 
-            <div class="kat col-md-4"><a href="motorke/motorka7.jpg" data-lightbox="mygallery">
-            <div class="card" style="width: 16rem;">
-            <img src="motorke/motorka7.jpg" class="card-img-top" alt="...">
-            </a>
-            <div class="card-body">
-            <h5 class="card-title">MS 260</h5>
-            <button class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample6" role="button" aria-expanded="false" aria-controls="collapseExample">
-            Saznajte više
-            </button>
-            <div class="collapse" id="collapseExample6">
-            <div class="textkat ">
-            Lagana profesionalna testera sa ElastoStart sistemom za olakšano startovanje motora i STIHL antivibracionim sistemom, prava je pomoć u obavljanju zahtevnih šumarskih poslova. Idealno podmazivanje lanca i ušteda ulja sa STIHL Ematic sistemom
-            </div>
-            </div>
-            </div>
-            </div>
-            </div>
+              
+</div>
 
-            <div class="kat col-md-4"><a href="motorke/motorka8.jpg" data-lightbox="mygallery">
-            <div class="card" style="width: 16rem;">
-            <img src="motorke/motorka8.jpg" class="card-img-top" alt="...">
-            </a>
-            <div class="card-body">
-            <h5 class="card-title">MS 310</h5>
-            <button class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample7" role="button" aria-expanded="false" aria-controls="collapseExample">
-            Saznajte više
-            </button>
-            <div class="collapse" id="collapseExample7">
-            <div class="textkat ">
-            Zagospodarite svojim imanjem pomoću ove moćne i izdržljive motorne testere savršenih performansi, jednostavnom za rukovanje. Idealno podmazivanje lanca sa STIHL Ematic sistemom.
-            </div>
-            </div>
-            </div>
-            </div>
-            </div>
 
-            <div class="kat col-md-4"><a href="motorke/motorka9.jpg" data-lightbox="mygallery">
-            <div class="card" style="width: 16rem;">
-            <img src="motorke/motorka9.jpg" class="card-img-top" alt="...">
-            </a>
-            <div class="card-body">
-            <h5 class="card-title">MS 291</h5>
-            <button class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample8" role="button" aria-expanded="false" aria-controls="collapseExample">
-            Saznajte više
-            </button>
-            <div class="collapse" id="collapseExample8">
-            <div class="textkat ">
-            Za seču drva za ogrev. Ekonomičan 2-MIX motor, dugovečni sistem filtera za vazduh, zatvarači rezervoara bez alata za bezbedno i lako punjenje, brz pristup motoru zahvaljujući jednodelnom poklopcu i brzi zatezač lanca. 3/8″-RM3 lanac za dobar rezultat sečiva.
-            </div>
-            </div>
-            </div>
-            </div>
-            </div>
 
-            <div class="kat col-md-4"><a href="motorke/motorka10.jpg" data-lightbox="mygallery">
-            <div class="card" style="width: 16rem;">
-            <img src="motorke/motorka10.jpg" class="card-img-top" alt="...">
-            </a>
-            <div class="card-body">
-            <h5 class="card-title">MS 170</h5>
-            <button class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample9" role="button" aria-expanded="false" aria-controls="collapseExample">
-            Saznajte više
-            </button>
-            <div class="collapse" id="collapseExample9">
-            <div class="textkat ">
-            Amaterska motorna testera , za stolarske radove, voćarstvo. Spretni model sa pouzdanom osnovnom opremom. Vrlo dobra za sečenje drva za ogrev i za šumarstvo. Oval model motorne testere je pogodan za obaranje stabala do prečnika od 30 cm. Zaštitnu opremu treba upotrebljavati bez obzira da li radite sa Stihl motornom ili električnom testerom.
+         <div id="pomeraj" class="col-md-3 col-sm-6" >
+                <div class="shop-item">
+                    <a href="trimeri/husqvarna/128R.jpg" data-lightbox="mygallery">
+                    <img class="shop-item-image" src="trimeri/husqvarna/128R.jpg">
+                    </a> 
+                     <span   class="shop-item-title">128 R</span>
+                   <div class="shop-item-details">
+                        <span  class="shop-item-price">529.00KM</span>
+                        <img class="btn btn-primary shop-item-button" type="button" class="shopimg" src="images/shopp.png">
+                    </div>
+                </div>
+              </div>
+              <div id="pomeraj" class="col-md-3 col-sm-6">
+                <div class="shop-item">
+                    <a href="trimeri/husqvarna/135R.png" data-lightbox="mygallery">
+                    <img class="shop-item-image" src="trimeri/husqvarna/135R.png">
+                    </a> 
+                    <span class="shop-item-title">135 R</span>
+                   <div class="shop-item-details">
+                        <span class="shop-item-price">1039.00KM</span>
+                       <img class="btn btn-primary shop-item-button" type="button" class="shopimg" src="images/shopp.png">
+                    </div>
+                </div>
+              </div>
+                <div id="pomeraj" class="col-md-3 col-sm-6">
+                <div class="shop-item">
+                    <a href="trimeri/husqvarna/525LK.png" data-lightbox="mygallery">
+                    <img class="shop-item-image" src="trimeri/husqvarna/525LK.png">
+                    </a> 
+                    <span class="shop-item-title">525 LK</span>
+                   <div class="shop-item-details">
+                    <span class="shop-item-price">929.00KM</span>
+                        <img class="btn btn-primary shop-item-button" type="button" class="shopimg" src="images/shopp.png">
+                    </div>
+                </div>
+              </div>
+              <div id="pomeraj" class="col-md-3 col-sm-6">
+                <div class="shop-item">
+                    
+                    <a href="trimeri/husqvarna/525RX.jpg" data-lightbox="mygallery">
+                    <img class="shop-item-image" src="trimeri/husqvarna/525RX.jpg">
+                    </a>
+                    <span class="shop-item-title">525 RX</span>  
+                  <div class="shop-item-details">
+                        <span class="shop-item-price">879.00KM</span>
+                        <img class="btn btn-primary shop-item-button" type="button" class="shopimg" src="images/shopp.png">
+                    </div>
+                </div>
+              </div>
+              <div id="pomeraj"  class="col-md-3 col-sm-6">
+                <div class="shop-item">
+                    
+                    <a href="trimeri/husqvarna/531RS.png" data-lightbox="mygallery">
+                    <img class="shop-item-image" src="trimeri/husqvarna/531RS.png">
+                  </a> 
+                  <span class="shop-item-title">531 RS</span>
+                   <div class="shop-item-details">
+                        <span class="shop-item-price">899.00KM</span>
+                       <img class="btn btn-primary shop-item-button" type="button" class="shopimg" src="images/shopp.png">
+                    </div>
+                </div>
+              </div>
+               <div id="pomeraj"  class="col-md-3 col-sm-6">
+                <div class="shop-item">
+                    
+                    <a href="trimeri/husqvarna/535RXT.jpg" data-lightbox="mygallery">
+                    <img class="shop-item-image" src="trimeri/husqvarna/535RXT.jpg">
+                  </a> 
+                  <span class="shop-item-title">535 RXT</span>
+                   <div class="shop-item-details">
+                        <span class="shop-item-price">1419.00KM</span>
+                       <img class="btn btn-primary shop-item-button" type="button" class="shopimg" src="images/shopp.png">
+                    </div>
+                </div>
+              </div>
+               <div id="pomeraj"  class="col-md-3 col-sm-6">
+                <div class="shop-item">
+                    
+                    <a href="trimeri/husqvarna/541RS.png" data-lightbox="mygallery">
+                    <img class="shop-item-image" src="trimeri/husqvarna/541RS.png">
+                  </a> 
+                  <span class="shop-item-title">541 RS</span>
+                   <div class="shop-item-details">
+                        <span class="shop-item-price">1019.00KM</span>
+                       <img class="btn btn-primary shop-item-button" type="button" class="shopimg" src="images/shopp.png">
+                    </div>
+                </div>
+              </div>
+               <div id="pomeraj"  class="col-md-3 col-sm-6">
+                <div class="shop-item">
+                    
+                    <a href="trimeri/husqvarna/541RST.jpg" data-lightbox="mygallery">
+                    <img class="shop-item-image" src="trimeri/husqvarna/541RST.jpg">
+                  </a> 
+                  <span class="shop-item-title">541 RST</span>
+                   <div class="shop-item-details">
+                        <span class="shop-item-price">1049.00KM</span>
+                       <img class="btn btn-primary shop-item-button" type="button" class="shopimg" src="images/shopp.png">
+                    </div>
+                </div>
+              </div>
+               <div id="pomeraj"  class="col-md-3 col-sm-6">
+                <div class="shop-item">
+                    
+                    <a href="trimeri/husqvarna/531RS.png" data-lightbox="mygallery">
+                    <img class="shop-item-image" src="trimeri/husqvarna/531RS.png">
+                  </a> 
+                  <span class="shop-item-title">531 RS</span>
+                   <div class="shop-item-details">
+                        <span class="shop-item-price">899.00KM</span>
+                       <img class="btn btn-primary shop-item-button" type="button" class="shopimg" src="images/shopp.png">
+                    </div>
+                </div>
+              </div>
+               <div id="pomeraj"  class="col-md-3 col-sm-6">
+                <div class="shop-item">
+                    
+                    <a href="trimeri/husqvarna/545FX.jpg" data-lightbox="mygallery">
+                    <img class="shop-item-image" src="trimeri/husqvarna/545FX.jpg">
+                  </a> 
+                  <span class="shop-item-title">545 FX</span>
+                   <div class="shop-item-details">
+                        <span class="shop-item-price">1569.00KM</span>
+                       <img class="btn btn-primary shop-item-button" type="button" class="shopimg" src="images/shopp.png">
+                    </div>
+                </div>
+              </div>
+               <div id="pomeraj"  class="col-md-3 col-sm-6">
+                <div class="shop-item">
+                    
+                    <a href="trimeri/husqvarna/545RX.jpg" data-lightbox="mygallery">
+                    <img class="shop-item-image" src="trimeri/husqvarna/545RX.jpg">
+                  </a> 
+                  <span class="shop-item-title">545 RX</span>
+                   <div class="shop-item-details">
+                        <span class="shop-item-price">1609.00KM</span>
+                       <img class="btn btn-primary shop-item-button" type="button" class="shopimg" src="images/shopp.png">
+                    </div>
+                </div>
+              </div>
+               <div id="pomeraj"  class="col-md-3 col-sm-6">
+                <div class="shop-item">
+                    
+                    <a href="trimeri/husqvarna/553RS.jpg" data-lightbox="mygallery">
+                    <img class="shop-item-image" src="trimeri/husqvarna/553RS.jpg">
+                  </a> 
+                  <span class="shop-item-title">553 RS</span>
+                   <div class="shop-item-details">
+                        <span class="shop-item-price">1369.00KM</span>
+                       <img class="btn btn-primary shop-item-button" type="button" class="shopimg" src="images/shopp.png">
+                    </div>
+                </div>
+              </div>
+              <div id="pomeraj"  class="col-md-3 col-sm-6">
+               
+              </div>
+              <div id="pomeraj"  class="col-md-3 col-sm-6">
+              
+              </div>
+              <div id="pomeraj"  class="col-md-3 col-sm-6">
+               
+              </div>
             </div>
-            </div>
-            </div>
-            </div>
-            </div>
-
-            <div class="kat col-md-4"><a href="motorke/motorka11.jpg" data-lightbox="mygallery">
-            <div class="card" style="width: 16rem;">
-            <img src="motorke/motorka11.jpg" class="card-img-top" alt="...">
-            </a>
-            <div class="card-body">
-            <h5 class="card-title">MS 661</h5>
-            <button class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample10" role="button" aria-expanded="false" aria-controls="collapseExample">
-            Saznajte više
-            </button>
-            <div class="collapse" id="collapseExample10">
-            <div class="textkat ">
-            Moćna motorna testera namenjena iskusnim profesionalcima. 2-MIX štedljivi motor, HD2 dugovečni filter i uljna pumpa sa regulacijom podmazivanja lanca garantuju dug i uspešan rad na najzahtevnijim poslovima u šumarstvu. Markirna linija na telu testere za jednostavnu kontrolu pravca pada stabla.
-            </div>
-            </div>
-            </div>
-            </div>
-            </div>
-
-            <div class="kat col-md-4"><a href="motorke/motorka12.jpg" data-lightbox="mygallery">
-            <div class="card" style="width: 16rem;">
-            <img src="motorke/motorka12.jpg" class="card-img-top" alt="...">
-            </a>
-            <div class="card-body">
-            <h5 class="card-title">MS 180</h5>
-            <button class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample11" role="button" aria-expanded="false" aria-controls="collapseExample">
-            Saznajte više
-            </button>
-            <div class="collapse" id="collapseExample11">
-            <div class="textkat ">
-            Amaterska motorna testera, za stolarske radove, vikendaše, voćarstvo. Spretni model sa pouzdanom osnovnom opremom. Vrlo dobra za secenje drva za ogrev i za sumarstvo. Dobra za obaranje stabala do precnika od 30 cm. Zaštitnu opremu treba upotrebljavati bez obzira da li radite sa motornom ili električnom testerom.
-            </div>
-            </div>
-            </div>
-            </div>
-            </div>
-
         </div>
-    
+        </section>
 
+
+
+
+
+
+               <div id="kosacice" class="firsth" style="margin-top:10px;">
+<h2>Kosačice<hr class="stihlhr"></h2>
+</div>
+<h2 class="stihluredjaji">STIHL <hr class="stihllinija"></h2>
+<div id="katalogslike" class="row">
+<div class="shop-items">
+            <div id="pomeraj" class="col-md-3 col-sm-6" >
+                <div class="shop-item">
+                    <a href="kosačice/kosacica1.jpg" data-lightbox="mygallery">
+                    <img class="shop-item-image" src="kosačice/kosacica1.jpg">
+                    </a> 
+                     <span   class="shop-item-title">RM 248 T</span>
+                   <div class="shop-item-details">
+                        <span  class="shop-item-price">808.00KM</span>
+                        <img class="btn btn-primary shop-item-button" type="button" class="shopimg" src="images/shopp.png">
+                    </div>
+                </div>
+              </div>
+              <div id="pomeraj" class="col-md-3 col-sm-6">
+                <div class="shop-item">
+                    <a href="kosačice/kosacica1.jpg" data-lightbox="mygallery">
+                    <img class="shop-item-image" src="kosačice/kosacica2.jpg">
+                    </a> 
+                    <span class="shop-item-title">RM 248 </span>
+                   <div class="shop-item-details">
+                        <span class="shop-item-price">659.00KM</span>
+                       <img class="btn btn-primary shop-item-button" type="button" class="shopimg" src="images/shopp.png">
+                    </div>
+                </div>
+              </div>
+
+
+
+              <div id="pomeraj" class="col-md-3 col-sm-6">
+                
+              </div>
+
+
+              <div id="pomeraj" class="col-md-3 col-sm-6">
+               
+              </div>
+               
+               <h2 class="husuredjaji">HUSQVARNA <hr class="huslinija"></h2>
+           </div>
+           <div id="pomeraj" class="col-md-3 col-sm-6" >
+                <div class="shop-item">
+                    <a href="kosačice/husqvarna/LB248S.jpg" data-lightbox="mygallery">
+                    <img class="shop-item-image" src="kosačice/husqvarna/LB248S.jpg">
+                    </a> 
+                     <span   class="shop-item-title">LB 248 S</span>
+                   <div class="shop-item-details">
+                        <span  class="shop-item-price">1059.00KM</span>
+                        <img class="btn btn-primary shop-item-button" type="button" class="shopimg" src="images/shopp.png">
+                    </div>
+                </div>
+              </div>
+              <div id="pomeraj" class="col-md-3 col-sm-6">
+                <div class="shop-item">
+                    <a href="kosačice/husqvarna/LB256SP.jpg" data-lightbox="mygallery">
+                    <img class="shop-item-image" src="kosačice/husqvarna/LB256SP.jpg">
+                    </a> 
+                    <span class="shop-item-title">LB 256 SP </span>
+                   <div class="shop-item-details">
+                        <span class="shop-item-price">989.00KM</span>
+                       <img class="btn btn-primary shop-item-button" type="button" class="shopimg" src="images/shopp.png">
+                    </div>
+                </div>
+              </div>
+              <div id="pomeraj" class="col-md-3 col-sm-6" >
+                <div class="shop-item">
+                    <a href="kosačice/husqvarna/LC140SP.jpg" data-lightbox="mygallery">
+                    <img class="shop-item-image" src="kosačice/husqvarna/LC140SP.jpg">
+                    </a> 
+                     <span   class="shop-item-title">LC 140 SP</span>
+                   <div class="shop-item-details">
+                        <span  class="shop-item-price">729.00KM</span>
+                        <img class="btn btn-primary shop-item-button" type="button" class="shopimg" src="images/shopp.png">
+                    </div>
+                </div>
+              </div>
+              <div id="pomeraj" class="col-md-3 col-sm-6">
+                <div class="shop-item">
+                    <a href="kosačice/husqvarna/LC151S.jpg" data-lightbox="mygallery">
+                    <img class="shop-item-image" src="kosačice/husqvarna/LC151S.jpg">
+                    </a> 
+                    <span class="shop-item-title">LC 151 S</span>
+                   <div class="shop-item-details">
+                        <span class="shop-item-price">1039.00KM</span>
+                       <img class="btn btn-primary shop-item-button" type="button" class="shopimg" src="images/shopp.png">
+                    </div>
+                </div>
+              </div>
+              <div id="pomeraj" class="col-md-3 col-sm-6" >
+                <div class="shop-item">
+                    <a href="kosačice/husqvarna/LC247S.jpg" data-lightbox="mygallery">
+                    <img class="shop-item-image" src="kosačice/husqvarna/LC247S.jpg">
+                    </a> 
+                     <span   class="shop-item-title">LC 247 S</span>
+                   <div class="shop-item-details">
+                        <span  class="shop-item-price">1029.00KM</span>
+                        <img class="btn btn-primary shop-item-button" type="button" class="shopimg" src="images/shopp.png">
+                    </div>
+                </div>
+              </div>
+              <div id="pomeraj" class="col-md-3 col-sm-6">
+                <div class="shop-item">
+                    <a href="kosačice/husqvarna/LC353AWD.png" data-lightbox="mygallery">
+                    <img class="shop-item-image" src="kosačice/husqvarna/LC353AWD.png">
+                    </a> 
+                    <span class="shop-item-title">LC 353 AWD</span>
+                   <div class="shop-item-details">
+                        <span class="shop-item-price">1579.00KM</span>
+                       <img class="btn btn-primary shop-item-button" type="button" class="shopimg" src="images/shopp.png">
+                    </div>
+                </div>
+              </div>
+              <div id="pomeraj" class="col-md-3 col-sm-6">
+                <div class="shop-item">
+                    <a href="kosačice/husqvarna/LC551SP.jpg" data-lightbox="mygallery">
+                    <img class="shop-item-image" src="kosačice/husqvarna/LC551SP.jpg">
+                    </a> 
+                    <span class="shop-item-title">LC 551 SP</span>
+                   <div class="shop-item-details">
+                        <span class="shop-item-price">2259.00KM</span>
+                       <img class="btn btn-primary shop-item-button" type="button" class="shopimg" src="images/shopp.png">
+                    </div>
+                </div>
+              </div>
+
+           </div>
+        </section>
+
+
+
+
+
+        <div id="ostaliuredjaji" class="firsth" style="margin-top:10px;">
+<h2>Ostali uredjaji <hr class="stihlhr"></h2>
+</div>
+
+<div id="katalogslike" class="row">
+<div class="shop-items">
+            <div id="pomeraj" class="col-md-3 col-sm-6" >
+                <div class="shop-item">
+                    <a href="ostaliuredjaji/ostali1.jpg" data-lightbox="mygallery">
+                    <img class="shop-item-image" src="ostaliuredjaji/ostali1.jpg">
+                    </a> 
+                     <span   class="shop-item-title">RE 88</span>
+                   <div class="shop-item-details">
+                        <span  class="shop-item-price">823.00KM</span>
+                        <img class="btn btn-primary shop-item-button" type="button" class="shopimg" src="images/shopp.png">
+                    </div>
+                </div>
+              </div>
+              <div id="pomeraj" class="col-md-3 col-sm-6">
+                <div class="shop-item">
+                    <a href="ostaliuredjaji/ostali2.jpg" data-lightbox="mygallery">
+                    <img class="shop-item-image" src="ostaliuredjaji/ostali2.jpg">
+                    </a> 
+                    <span class="shop-item-title">SG 31</span>
+                   <div class="shop-item-details">
+                        <span class="shop-item-price">90.00KM</span>
+                       <img class="btn btn-primary shop-item-button" type="button" class="shopimg" src="images/shopp.png">
+                    </div>
+                </div>
+              </div>
+                <div id="pomeraj" class="col-md-3 col-sm-6">
+                <div class="shop-item">
+                    <a href="ostaliuredjaji/ostali3.jpg" data-lightbox="mygallery">
+                    <img class="shop-item-image" src="ostaliuredjaji/ostali3.jpg">
+                    </a> 
+                    <span class="shop-item-title">HSA 45</span>
+                   <div class="shop-item-details">
+                    <span class="shop-item-price">299.00KM</span>
+                        <img class="btn btn-primary shop-item-button" type="button" class="shopimg" src="images/shopp.png">
+                    </div>
+                </div>
+              </div>
+              <div id="pomeraj" class="col-md-3 col-sm-6">
+                <div class="shop-item">
+                    
+                    <a href="ostaliuredjaji/ostali4.jpg" data-lightbox="mygallery">
+                    <img class="shop-item-image" src="ostaliuredjaji/ostali4.jpg">
+                    </a>
+                    <span class="shop-item-title">SG 51</span>  
+                  <div class="shop-item-details">
+                        <span class="shop-item-price">220.00KM</span>
+                        <img class="btn btn-primary shop-item-button" type="button" class="shopimg" src="images/shopp.png">
+                    </div>
+                </div>
+              </div>
+              <div id="pomeraj"  class="col-md-3 col-sm-6">
+                <div class="shop-item">
+                    
+                    <a href="ostaliuredjaji/ostali5.jpg" data-lightbox="mygallery">
+                    <img class="shop-item-image" src="ostaliuredjaji/ostali5.jpg">
+                  </a> 
+                  <span class="shop-item-title">FSE 52</span>
+                   <div class="shop-item-details">
+                        <span class="shop-item-price">205.00KM</span>
+                       <img class="btn btn-primary shop-item-button" type="button" class="shopimg" src="images/shopp.png">
+                    </div>
+                </div>
+              </div>
+               
+                <div id="pomeraj" class="col-md-3 col-sm-6">
+                <div class="shop-item">
+                   
+                    <a href="ostaliuredjaji/ostali7.jpg"  data-lightbox="mygallery">
+                    <img class="shop-item-image" src="ostaliuredjaji/ostali7.jpg">
+                  </a>
+                   <span class="shop-item-title">MSE 190 C-B</span>  
+                  <div class="shop-item-details">
+                        <span class="shop-item-price">603.00KM</span>
+                        <img class="btn btn-primary shop-item-button" type="button" class="shopimg" src="images/shopp.png">
+                    </div>
+                </div>
+              </div>
+                
+                <div id="pomeraj" class="col-md-3 col-sm-6">
+                <div class="shop-item">
+                    
+                    <a href="ostaliuredjaji/ostali9.jpg"  data-lightbox="mygallery">
+                    <img class="shop-item-image" src="ostaliuredjaji/ostali9.jpg">
+                  </a>
+                  <span class="shop-item-title">SE 62</span>
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">349.00KM</span>
+                       <img class="btn btn-primary shop-item-button" type="button" class="shopimg" src="images/shopp.png">
+                    </div>
+                </div>
+              </div>
+                <div id="pomeraj" class="col-md-3 col-sm-6">
+                <div class="shop-item">
+                    
+                    <a href="ostaliuredjaji/ostali10.jpg"  data-lightbox="mygallery">
+                    <img class="shop-item-image" src="ostaliuredjaji/ostali10.jpg">
+                  </a>
+                  <span class="shop-item-title">FSA 56</span>
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">398.00KM</span>
+                        <img class="btn btn-primary shop-item-button" type="button" class="shopimg" src="images/shopp.png">
+                    </div>
+                </div>
+              </div>
+              <div id="pomeraj" class="col-md-3 col-sm-6">
+               <div class="shop-item">
+                    
+                    <a href="ostaliuredjaji/ostali11.jpg"  data-lightbox="mygallery">
+                    <img class="shop-item-image" src="ostaliuredjaji/ostali11.jpg">
+                  </a>
+                  <span class="shop-item-title">MSA 120 C</span>
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">556.00KM</span>
+                        <img class="btn btn-primary shop-item-button" type="button" class="shopimg" src="images/shopp.png">
+                    </div>
+                </div>
+              </div>
+              <div id="pomeraj" class="col-md-3 col-sm-6">
+               <div class="shop-item">
+                    
+                    <a href="ostaliuredjaji/ostali12.jpg"  data-lightbox="mygallery">
+                    <img class="shop-item-image" src="ostaliuredjaji/ostali12.jpg">
+                  </a>
+                  <span class="shop-item-title">SR 200</span>
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">2390.00KM</span>
+                        <img class="btn btn-primary shop-item-button" type="button" class="shopimg" src="images/shopp.png">
+                    </div>
+                </div>
+                
+              </div>
+
+              <div id="pomeraj" class="col-md-3 col-sm-6">
+               <div class="shop-item">
+                    
+                    <a href="ostaliuredjaji/ostali13.jpg"  data-lightbox="mygallery">
+                    <img class="shop-item-image" src="ostaliuredjaji/ostali13.jpg">
+                  </a>
+                  <span class="shop-item-title">SR 420</span>
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">1110.00KM</span>
+                        <img class="btn btn-primary shop-item-button" type="button" class="shopimg" src="images/shopp.png">
+                    </div>
+                </div>
+                
+              </div>
+
+              <div id="pomeraj" class="col-md-3 col-sm-6">
+              
+                
+             
+            </div>
+        </div>
+                </div>
+        </section>
         
-       <div id="trimeri" class="firsth">
-            <h2>Trimeri <hr class="stihlhr"></h2>
-        </div>
-
-        <div id="katalogslike" class="row">
-            <div class="kat col-md-4">
-            <a href="trimeri/Trimer1.jpg" data-lightbox="mygallery">
-            <div class="card" style="width: 15rem;">
-            <img src="trimeri/Trimer1.jpg" class="card-img-top" alt="...">
-            </a>
-            <div class="card-body">
-            <h5 class="card-title">FS 38</h5>
-            <button class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample12" role="button" aria-expanded="false" aria-controls="collapseExample">
-            Saznajte više
-            </button>
-            <div class="collapse" id="collapseExample12">
-            <div class="textkat ">
-            Najlakši motorni trimer u STIHL ponudi, idealan za košenje trave na ivicama. Multifunkcionalna okrugla ručka, može se dodatno opremiti sa STIHL ElastoStartom.
+        <section class="container content-section">
+            <h2 class="section-header">KORPA</h2>
+            <div class="cart-row">
+                <span class="cart-item cart-header cart-column">Proizvod</span>
+                <span class="cart-price cart-header cart-column">Cena</span>
+                <span class="cart-quantity cart-header cart-column">Kolicina</span>
             </div>
+            <div  class="cart-items">
             </div>
+            <div class="cart-total">
+                <strong class="cart-total-title">Ukupno</strong>
+                <span class="cart-total-price">0KM</span>
             </div>
-            </div>
-            </div>
-
-            <div class="kat col-md-4">
-            <a href="trimeri/Trimer2.jpg" data-lightbox="mygallery">
-            <div class="card" style="width: 15rem;">
-            <img src="trimeri/Trimer2.jpg" class="card-img-top" alt="...">
-            </a>
-            <div class="card-body">
-            <h5 class="card-title">FS 55</h5>
-            <button class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample13" role="button" aria-expanded="false" aria-controls="collapseExample">
-            Saznajte više
-            </button>
-            <div class="collapse" id="collapseExample13">
-            <div class="textkat ">
-            Lagan i kompaktan trimer sa bicikl ručkom koja ga čini jednostavnim za upotrebu i idealnim za rad na većim radnim površinama. Multifunkcionalna drška olakšava manevrisanje i štedi Vašu snagu.
-            </div>
-            </div>
-            </div>
-            </div>
-            </div>
-
-            <div class="kat col-md-4">
-            <a href="trimeri/Trimer3.jpg" data-lightbox="mygallery">
-            <div class="card" style="width: 15rem;">
-            <img src="trimeri/Trimer3.jpg" class="card-img-top" alt="...">
-            </a>
-            <div class="card-body">
-            <h5 class="card-title">FS 120</h5>
-            <button class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample14" role="button" aria-expanded="false" aria-controls="collapseExample">
-            Saznajte više
-            </button>
-            <div class="collapse" id="collapseExample14">
-            <div class="textkat ">
-            Odličan rezultat košenja na većim površinama i sa grubom travom. Ugodan rad obezbeđuju STIHL antivibracioni sistem, multifunkcionalna drška i uprtač.
-            </div>
-            </div>
-            </div>
-            </div>
-            </div>
-
-            <div class="kat col-md-4">
-            <a href="trimeri/Trimer4.jpg" data-lightbox="mygallery">
-            <div class="card" style="width: 15rem;">
-            <img src="trimeri/Trimer4.jpg" class="card-img-top" alt="...">
-            </a>
-            <div class="card-body">
-            <h5 class="card-title">FS 350</h5>
-            <button class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample15" role="button" aria-expanded="false" aria-controls="collapseExample">
-            Saznajte više
-            </button>
-            <div class="collapse" id="collapseExample15">
-            <div class="textkat ">
-            Motorni trimer za košenje guste trave. Multifunkcionalna drška sa 2 ručke i podešavanjem bez alata. Univerzalni kaiš olakšava nošenje. Mogućnost promene alata za sećenje.
-            </div>
-            </div>
-            </div>
-            </div>
-            </div>
-
-            <div class="kat col-md-4">
-            <a href="trimeri/Trimer5.jpg" data-lightbox="mygallery">
-            <div class="card" style="width: 15rem;">
-            <img src="trimeri/Trimer5.jpg" class="card-img-top" alt="...">
-            </a>
-            <div class="card-body">
-            <h5 class="card-title">FS 450</h5>
-            <button class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample16" role="button" aria-expanded="false" aria-controls="collapseExample">
-            Saznajte više
-            </button>
-            <div class="collapse" id="collapseExample16">
-            <div class="textkat ">
-            Moćna motorna kosa sa STIHL antivibracionim sistemom u 4 tačke, ElastoStartom za lako pokretanje motora i multifunkcionalnom frškom koja se podešava bez alata, univerzalni kaiš ADVICE PLUS.
-            </div>
-            </div>
-            </div>
-            </div>
-            </div>
-
-        </div>
-        
-         <div id="kosacice" class="firsth">
-            <h2>Kosacice <hr class="stihlhr"></h2>
-        </div>
-
-        <div id="katalogslike" class="row">
             
-            <div class="kat col-md-4">
-            <a href="kosačice/kosacica2.jpg" data-lightbox="mygallery">
-            <div class="card" style="width: 15rem;">
-            <img src="kosačice/kosacica2.jpg" class="card-img-top" alt="...">
-            </a>
-            <div class="card-body">
-            <h5 class="card-title">RM 248 T</h5>
-            <button class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample17" role="button" aria-expanded="false" aria-controls="collapseExample">
-            Saznajte više
-            </button>
-            <div class="collapse" id="collapseExample17">
-            <div class="textkat ">
-            Okretna benzinsak kosačica za travu sa širinom noža od 46 cm za travnjake srednje veličine. Centralno podešavanje visine košenja, preklopna ručka kao i pogon točkova sa 1 brzinom za udoban rad. Korpa za travu od 55 litara.
-            </div>
-            </div>
-            </div>
-            </div>
-            </div>
 
-            <div class="kat col-md-4">
-            <a href="kosačice/kosacica1.jpg" data-lightbox="mygallery">
-            <div class="card" style="width: 15rem;">
-            <img src="kosačice/kosacica1.jpg" class="card-img-top" alt="...">
-            </a>
-            <div class="card-body">
-            <h5 class="card-title">RM 248</h5>
-            <button class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample18" role="button" aria-expanded="false" aria-controls="collapseExample">
-            Saznajte više
-            </button>
-            <div class="collapse" id="collapseExample18">
-            <div class="textkat ">
-            Okretna benzinska kosačica za travu sa širinom noža od 46cm za travnjake srednje veličine.Centralno podešavanje visine košenja.Preklopna ručka,korpa za travu od 55l.
-            </div>
-            </div>
-            </div>
-            </div>
-            </div>
-        </div>
+
+            <p>
+  <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+    Placanje pouzecem
+  </a>
+  <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample" disabled>
+   Placanje karticom
+  </button>
+</p>
+<div class="collapse" id="collapseExample">
+  <div class="card card-body">
+    <div id="formular" class="col-md-8 order-md-1">
+            <h4 class="mb-3">Formular je obavezan</h4>
+            <form id="proba" class="needs-validation" action="store.php" method="post" onsubmit="return EMAILPORUKA()"   class="contactform" novalidate="">
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="firstName">Ime</label>
+                        <label class="form-control-label px-3"><span class="text-danger "></span></label>
+                        <input type="text" class="form-control" name="firstName" id="firstName"  placeholder="Ime" value="" required="true">
+                        <div class="invalid-feedback"> Ovo polje je obavezno! </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="lastName">Prezime</label>
+                        <input type="text" class="form-control" name="lastName" id="lastName" placeholder="Prezime" value="" required="" >
+                        <div class="invalid-feedback"> Ovo polje je obavezno! </div>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control"   name="email" id="email" placeholder="ime@gmail.com" required="" >
+                    <div class="invalid-feedback"> Molimo unesite ispravnu email adresu!</div>
+                </div>
+                <div class="mb-3">
+                    <label for="address">Adresa</label>
+                    <input  type="text" class="form-control" name="address" id="address" placeholder="Pozeska 314" required="Ovo polje je obavezno">
+                    <div  class="invalid-feedback"> Ovo polje je obavezno! </div>
+                </div>
+                <div class="mb-3">
+                    <label for="address2">Telefon<span class="text-muted"></span></label>
+                    <input required="" type="number" class="form-control" name="address2" id="address2" placeholder="+387 6x-xxx-xxx" >
+                    <div class="invalid-feedback"> Ovo polje je obavezno!</div>
+                </div>
+                 <div style="display:none;" class="mb-3">
+                   
+                    <input type="text" class="form-control" name="inputname" id="inputname" placeholder="">
+                    
+                </div>
+                <div class="row">
+                    <div class="col-md-5 mb-3">
+                        <label for="country">Zemlja</label>
+                        <select class="custom-select d-block w-100" id="country" required="">
+                            <option value="">Izaberite...</option>
+                             <option>BiH</option>
+                              
+                        </select>
+                        <div class="invalid-feedback"> Ovo polje je obavezno! </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label for="state">Okrug</label>
+                        <select class="custom-select d-block w-100" id="state" required="">
+                            <option value="">Izaberite...</option>
+                            <option>Bosna</option>
+                            <option>Bosanska Krajina</option>            
+                            <option>Cazinska Krajina/Bihaćki džep</option>                         
+                            <option>Bosanska Posavina</option>             
+                            <option>Semberija</option>     
+                            <option>Usora</option> 
+                            <option>Soli</option>
+                            <option>Istočna Bosna/Podrinje</option>                  
+                            <option>Tropolje/Završje</option>            
+                            <option>Središnja Bosna</option>           
+                            <option>Vrhbosna/Sarajevo</option>             
+                            <option>Hercegovina</option>       
+                            <option>Zapadna Hercegovina</option>               
+                            <option>Istočna Hercegovina</option>               
+                            <option>Gornja Hercegovina</option>              
+                            <option>Donja Hercegovina</option>             
+                            <option>Podrinje</option>    
+                            <option>Osat (oblast)</option>
+                  </select>
+                        <div class="invalid-feedback"> Ovo polje je obavezno! </div>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <label for="zip">Postanski broj</label>
+                        <input type="text" class="form-control" id="zip" placeholder="" required="">
+                        <div class="invalid-feedback">Ovo polje je obavezno! </div>
+                    </div>
+                     <!-- Button trigger modal -->
+           <button id="dugme" class="btn btn-primary" style="margin-left: auto;width: 120px;margin-right: 14px;"  onsubmit="return EMAILPORUKA()" type="submit"   name="poruci">Poruci</button>
+                </div>
+            </form>
+  </div>
+</div>
+
+
+
+
+
+
+      
+          
+        </section>
+
        
-        <div id="ostaliuredjaji" class="firsth">
-            <h2>Ostali uredjaji <hr class="stihlhr"></h2>
-        </div>
 
-        <div id="katalogslike" class="row">
-            <div class="kat col-md-4">
-            <a href="ostaliuredjaji/ostali1.jpg" data-lightbox="mygallery">
-            <div class="card" style="width: 15rem;">
-            <img src="ostaliuredjaji/ostali1.jpg" class="card-img-top" alt="...">
-            </a>
-            <div class="card-body">
-            <h5 class="card-title">RE 88</h5>
-            <button class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample19" role="button" aria-expanded="false" aria-controls="collapseExample">
-            Saznajte više
-            </button>
-            <div class="collapse" id="collapseExample19">
-            <div class="textkat ">
-            Okretan i lak perač namenjen za povremene korisnike. Idealno rešnje za brzo i jednostavno pranje automobila i dvorišta
-            </div>
-            </div>
-            </div>
-            </div>
-            </div>
 
-            <div class="kat col-md-4">
-            <a href="ostaliuredjaji/ostali2.jpg" data-lightbox="mygallery">
-            <div class="card" style="width: 15rem;">
-            <img src="ostaliuredjaji/ostali2.jpg" class="card-img-top" alt="...">
-            </a>
-            <div class="card-body">
-            <h5 class="card-title">SG 31</h5>
-            <button class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample20" role="button" aria-expanded="false" aria-controls="collapseExample">
-            Saznajte više
-            </button>
-            <div class="collapse" id="collapseExample20">
-            <div class="textkat ">
-            Ručna prskalica, naročito pogodna za privatnu upotrebu. Lako rukovanje zbog velikog otvora za punjenje, ergonomske slavine i teleskopske cevi.
-            </div>
-            </div>
-            </div>
-            </div>
-            </div>
 
-            <div class="kat col-md-4">
-            <a href="ostaliuredjaji/ostali3.jpg" data-lightbox="mygallery">
-            <div class="card" style="width: 15rem;">
-            <img src="ostaliuredjaji/ostali3.jpg" class="card-img-top" alt="...">
-            </a>
-            <div class="card-body">
-            <h5 class="card-title">HSA 45</h5>
-            <button class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample21" role="button" aria-expanded="false" aria-controls="collapseExample">
-            Saznajte više
-            </button>
-            <div class="collapse" id="collapseExample21">
-            <div class="textkat ">
-            Veoma lagane baterijske makaze za sečenje žive ograde i uređenje okućnice. Ima jednostrano brušen nož sa rastojanjem od 24 mm između zubaca, integrisanu bateriju sa indikatorom napunjenosti. Vreme punjenja baterije 145 min. / 210 min. (80% / 100%).
-            </div>
-            </div>
-            </div>
-            </div>
-            </div>
+       
 
-            <div class="kat col-md-4">
-            <a href="ostaliuredjaji/ostali4.jpg" data-lightbox="mygallery">
-            <div class="card" style="width: 15rem;">
-            <img src="ostaliuredjaji/ostali4.jpg" class="card-img-top" alt="...">
-            </a>
-            <div class="card-body">
-            <h5 class="card-title">SG 51</h5>
-            <button class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample22" role="button" aria-expanded="false" aria-controls="collapseExample">
-            Saznajte više
-            </button>
-            <div class="collapse" id="collapseExample22">
-            <div class="textkat ">
-            Leđna prskalica za povremenu i profesionalnu upotrebu. Komforna sa polugom pumpe koja može da se montira na obe strane i ergonomskim zaustavnim ventilom. Robustan dizajn za dug vek trajanja, čak i za profesionalnu upotrebu.
-            </div>
-            </div>
-            </div>
-            </div>
-            </div>
+         <!--   Modal -->
+           <!-- <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h4 class="modal-title" id="exampleModalLongTitle">Nacin placanja</h4>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                    <h5>Plaćanje pouzećem</h5>
+                      <p>Plaćanje pouzećem podrazumeva plaćanje narudžbenice kuriru prilikom preuzimanja pošiljke. Plaćanje se vrši isključivo gotovinom.</p>
 
-            <div class="kat col-md-4">
-            <a href="ostaliuredjaji/ostali5.jpg" data-lightbox="mygallery">
-            <div class="card" style="width: 15rem;">
-            <img src="ostaliuredjaji/ostali5.jpg" class="card-img-top" alt="...">
-            </a>
-            <div class="card-body">
-            <h5 class="card-title">FSE 52</h5>
-            <button class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample23" role="button" aria-expanded="false" aria-controls="collapseExample">
-            Saznajte više
-            </button>
-            <div class="collapse" id="collapseExample23">
-            <div class="textkat ">
-            Sa električnom motornom kosom STIHL FSE 52 obezbeđujete svojem vrtu savršen izgled: precizno i efikasno košenje ivica travnjaka i uklanjanje trave oko kamenja, biljaka, saksija i drugih prepreka. Možete potpuno bezbrižno da pređete na posao, jer je motorna kosa STIHL FSE 52 zaista lagana i zato što električni motor nije samo snažan, već radi i bez emisija, što znači da ne ugožava životnu sredinu pri doterivanju.
-            </div>
-            </div>
-            </div>
-            </div>
-            </div>
+                    <h5>Plaćanje platnim karticama</h5>
+                      <p>Svoju porudžbinu možete platiti korišćenjem Visa, Mastercard, Maestro ili American Express.karticama, izdatim od strane domaće banke. Kartica mora biti odobrena od strane banke izdavaoca za online (Internet) plaćanje.</p>
+                    </div>
+                    <div class="modal-footer">
+                    
+                    <button type="button"  onclick="newpageshop()" class="btn btn-primary">Pouzecem</button>
+                   <span class="d-inline-block" tabindex="0" data-toggle="tooltip" title="Izrada ove opcije je u toku molimo Vas za malo strpljenja">
+                    <button class="btn btn-primary" style="pointer-events: none;" type="button" disabled>Karticom</button>
+                    </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </section>
 
-            <div class="kat col-md-4">
-            <a href="ostaliuredjaji/ostali7.jpg" data-lightbox="mygallery">
-            <div class="card" style="width: 15rem;">
-            <img src="ostaliuredjaji/ostali7.jpg" class="card-img-top" alt="...">
-            </a>
-            <div class="card-body">
-            <h5 class="card-title">MSE 190 C</h5>
-            <button class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample24" role="button" aria-expanded="false" aria-controls="collapseExample">
-            Saznajte više
-            </button>
-            <div class="collapse" id="collapseExample24">
-            <div class="textkat ">
-            Veoma dobra za građevinske radove i seču ogrevnog drveta. Optimalna ergonomija za bezbedan rad, kočnica za lanac QuicStop Super – kod puštanja zadnje drške automatski se zaustavlja lanac testere, mekan držač za dobar prihvat i prijatan rad, zaštita od preopterećenja.
-            </div>
-            </div>
-            </div>
-            </div>
-            </div>
-
-            <div class="kat col-md-4">
-            <a href="ostaliuredjaji/ostali9.jpg" data-lightbox="mygallery">
-            <div class="card" style="width: 15rem;">
-            <img src="ostaliuredjaji/ostali9.jpg" class="card-img-top" alt="...">
-            </a>
-            <div class="card-body">
-            <h5 class="card-title">SE 62</h5>
-            <button class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample25" role="button" aria-expanded="false" aria-controls="collapseExample">
-            Saznajte više
-            </button>
-            <div class="collapse" id="collapseExample25">
-            <div class="textkat ">
-            Usisivač za mokro i suvo usisavanje sa moćnim sistemom vazdušnih filtera, funkcijom automatskog čišćenja filtera uz mogućnost duvanja priključivanjem usisne cevi na izduvni
-            priključak. Efikasno uklanja prašinu, prljavštinu ili tečnost uz korišćenje seta za mokro usisavanje.
-            </div>
-            </div>
-            </div>
-            </div>
-            </div>
-
-            <div class="kat col-md-4">
-            <a href="ostaliuredjaji/ostali10.jpg" data-lightbox="mygallery">
-            <div class="card" style="width: 15rem;">
-            <img src="ostaliuredjaji/ostali10.jpg" class="card-img-top" alt="...">
-            </a>
-            <div class="card-body">
-            <h5 class="card-title">FSA 56</h5>
-            <button class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample26" role="button" aria-expanded="false" aria-controls="collapseExample">
-            Saznajte više
-            </button>
-            <div class="collapse" id="collapseExample26">
-            <div class="textkat ">
-            Laka baterijska motorna kosa sa velikim učinkom košenja. Prečnik kruga za sečenje 280 mm, družina vratila se podešava pritiskom na dugme, mogućnost podešavanja kružne ručke bez alata. Dodirivanjem tla glavom za košenje nit za sečenje se automatski podešava, težina 2,5 kg.
-            </div>
-            </div>
-            </div>
-            </div>
-            </div>
-
-            <div class="kat col-md-4">
-            <a href="ostaliuredjaji/ostali11.jpg" data-lightbox="mygallery">
-            <div class="card" style="width: 15rem;">
-            <img src="ostaliuredjaji/ostali11.jpg" class="card-img-top" alt="...">
-            </a>
-            <div class="card-body">
-            <h5 class="card-title">MSA 120C</h5>
-            <button class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample27" role="button" aria-expanded="false" aria-controls="collapseExample">
-            Saznajte više
-            </button>
-            <div class="collapse" id="collapseExample27">
-            <div class="textkat ">
-            Lagana baterijska motorna testera za negu imanja i jednostavne zanatske radove. Poseduje mekanu dršku, brzu i laku zamenu lanca pomoću STIHL brzog zatezanja lanca, kočnicu lanca QuickStop Super, transparentni rezervoar za ulje, visok kapacitet sečenja sa lancem 1/4″-PM3.
-            </div>
-            </div>
-            </div>
-            </div>
-            </div>
-
-        </div>
-        
-
-        <div id="ulja" class="firsth">
-            <h2>Ulja i zaštitna oprema <hr class="stihlhr"></h2>
-        </div>
-
-        <div id="katalogslike" class="row">
-            <div class="kat col-md-4">
-            <a href="ostalo/ulja/ulja1.jpg" data-lightbox="mygallery">
-            <div class="card" style="width: 15rem;">
-            <img src="ostalo/ulja/ulja1.jpg" class="card-img-top" alt="...">
-            </a>
-            <div class="card-body">
-            <h5 class="card-title">MS 230</h5>
-            <button class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample28" role="button" aria-expanded="false" aria-controls="collapseExample">
-            Saznajte više
-            </button>
-            <div class="collapse" id="collapseExample28">
-            <div class="textkat ">
-            Lagana baterijska motorna testera za negu imanja i jednostavne zanatske radove. Poseduje mekanu dršku, brzu i laku zamenu lanca pomoću STIHL brzog zatezanja lanca, kočnicu lanca QuickStop Super, transparentni rezervoar za ulje, visok kapacitet sečenja sa lancem 1/4″-PM3.
-            </div>
-            </div>
-            </div>
-            </div>
-            </div>
-
-            <div class="kat col-md-4">
-            <a href="ostalo/ulja/ulja3.jpg" data-lightbox="mygallery">
-            <div class="card" style="width: 15rem;">
-            <img src="ostalo/ulja/ulja3.jpg" class="card-img-top" alt="...">
-            </a>
-            <div class="card-body">
-            <h5 class="card-title">MS 230</h5>
-            <button class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample29" role="button" aria-expanded="false" aria-controls="collapseExample">
-            Saznajte više
-            </button>
-            <div class="collapse" id="collapseExample29">
-            <div class="textkat ">
-            Lagana baterijska motorna testera za negu imanja i jednostavne zanatske radove. Poseduje mekanu dršku, brzu i laku zamenu lanca pomoću STIHL brzog zatezanja lanca, kočnicu lanca QuickStop Super, transparentni rezervoar za ulje, visok kapacitet sečenja sa lancem 1/4″-PM3.
-            </div>
-            </div>
-            </div>
-            </div>
-            </div>
-
-            <div class="kat col-md-4">
-            <a href="ostalo/ulja/ulja4.jpg" data-lightbox="mygallery">
-            <div class="card" style="width: 15rem;">
-            <img src="ostalo/ulja/ulja4.jpg" class="card-img-top" alt="...">
-            </a>
-            <div class="card-body">
-            <h5 class="card-title">MS 230</h5>
-            <button class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample30" role="button" aria-expanded="false" aria-controls="collapseExample">
-            Saznajte više
-            </button>
-            <div class="collapse" id="collapseExample30">
-            <div class="textkat ">
-            Lagana baterijska motorna testera za negu imanja i jednostavne zanatske radove. Poseduje mekanu dršku, brzu i laku zamenu lanca pomoću STIHL brzog zatezanja lanca, kočnicu lanca QuickStop Super, transparentni rezervoar za ulje, visok kapacitet sečenja sa lancem 1/4″-PM3.
-            </div>
-            </div>
-            </div>
-            </div>
-            </div>
-
-            <div class="kat col-md-4">
-            <a href="ostalo/ulja/ulja5.jpg" data-lightbox="mygallery">
-            <div class="card" style="width: 15rem;">
-            <img src="ostalo/ulja/ulja5.jpg" class="card-img-top" alt="...">
-            </a>
-            <div class="card-body">
-            <h5 class="card-title">MS 230</h5>
-            <button class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample31" role="button" aria-expanded="false" aria-controls="collapseExample">
-            Saznajte više
-            </button>
-            <div class="collapse" id="collapseExample31">
-            <div class="textkat ">
-            Lagana baterijska motorna testera za negu imanja i jednostavne zanatske radove. Poseduje mekanu dršku, brzu i laku zamenu lanca pomoću STIHL brzog zatezanja lanca, kočnicu lanca QuickStop Super, transparentni rezervoar za ulje, visok kapacitet sečenja sa lancem 1/4″-PM3.
-            </div>
-            </div>
-            </div>
-            </div>
-            </div>
-
-            <div class="kat col-md-4">
-            <a href="ostalo/ulja/ulja6.jpg" data-lightbox="mygallery">
-            <div class="card" style="width: 15rem;">
-            <img src="ostalo/ulja/ulja6.jpg" class="card-img-top" alt="...">
-            </a>
-            <div class="card-body">
-            <h5 class="card-title">MS 230</h5>
-            <button class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample32" role="button" aria-expanded="false" aria-controls="collapseExample">
-            Saznajte više
-            </button>
-            <div class="collapse" id="collapseExample32">
-            <div class="textkat ">
-            Lagana baterijska motorna testera za negu imanja i jednostavne zanatske radove. Poseduje mekanu dršku, brzu i laku zamenu lanca pomoću STIHL brzog zatezanja lanca, kočnicu lanca QuickStop Super, transparentni rezervoar za ulje, visok kapacitet sečenja sa lancem 1/4″-PM3.
-            </div>
-            </div>
-            </div>
-            </div>
-            </div>
-
-            <div class="kat col-md-4">
-            <a href="ostalo/ulja/ulja7.png" data-lightbox="mygallery">
-            <div class="card" style="width: 15rem;">
-            <img src="ostalo/ulja/ulja7.png" class="card-img-top" alt="...">
-            </a>
-            <div class="card-body">
-            <h5 class="card-title">MS 230</h5>
-            <button class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample33" role="button" aria-expanded="false" aria-controls="collapseExample">
-            Saznajte više
-            </button>
-            <div class="collapse" id="collapseExample33">
-            <div class="textkat ">
-            Lagana baterijska motorna testera za negu imanja i jednostavne zanatske radove. Poseduje mekanu dršku, brzu i laku zamenu lanca pomoću STIHL brzog zatezanja lanca, kočnicu lanca QuickStop Super, transparentni rezervoar za ulje, visok kapacitet sečenja sa lancem 1/4″-PM3.
-            </div>
-            </div>
-            </div>
-            </div>
-            </div>
-
-            <div class="kat col-md-4">
-            <a href="ostalo/ulja/ulja9.jpg" data-lightbox="mygallery">
-            <div class="card" style="width: 15rem;">
-            <img src="ostalo/ulja/ulja9.jpg" class="card-img-top" alt="...">
-            </a>
-            <div class="card-body">
-            <h5 class="card-title">MS 230</h5>
-            <button class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample34" role="button" aria-expanded="false" aria-controls="collapseExample">
-            Saznajte više
-            </button>
-            <div class="collapse" id="collapseExample34">
-            <div class="textkat ">
-            Lagana baterijska motorna testera za negu imanja i jednostavne zanatske radove. Poseduje mekanu dršku, brzu i laku zamenu lanca pomoću STIHL brzog zatezanja lanca, kočnicu lanca QuickStop Super, transparentni rezervoar za ulje, visok kapacitet sečenja sa lancem 1/4″-PM3.
-            </div>
-            </div>
-            </div>
-            </div>
-            </div>
-
-            <div class="kat col-md-4">
-            <a href="ostalo/ulja/ulja10.jpg" data-lightbox="mygallery">
-            <div class="card" style="width: 15rem;">
-            <img src="ostalo/ulja/ulja10.jpg" class="card-img-top" alt="...">
-            </a>
-            <div class="card-body">
-            <h5 class="card-title">MS 230</h5>
-            <button class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample35" role="button" aria-expanded="false" aria-controls="collapseExample">
-            Saznajte više
-            </button>
-            <div class="collapse" id="collapseExample35">
-            <div class="textkat ">
-            Lagana baterijska motorna testera za negu imanja i jednostavne zanatske radove. Poseduje mekanu dršku, brzu i laku zamenu lanca pomoću STIHL brzog zatezanja lanca, kočnicu lanca QuickStop Super, transparentni rezervoar za ulje, visok kapacitet sečenja sa lancem 1/4″-PM3.
-            </div>
-            </div>
-            </div>
-            </div>
-            </div>
-
-            <div class="kat col-md-4">
-            <a href="ostalo/ulja/ulja11.jpg" data-lightbox="mygallery">
-            <div class="card" style="width: 15rem;">
-            <img src="ostalo/ulja/ulja11.jpg" class="card-img-top" alt="...">
-            </a>
-            <div class="card-body">
-            <h5 class="card-title">MS 230</h5>
-            <button class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample36" role="button" aria-expanded="false" aria-controls="collapseExample">
-            Saznajte više
-            </button>
-            <div class="collapse" id="collapseExample36">
-            <div class="textkat ">
-            Lagana baterijska motorna testera za negu imanja i jednostavne zanatske radove. Poseduje mekanu dršku, brzu i laku zamenu lanca pomoću STIHL brzog zatezanja lanca, kočnicu lanca QuickStop Super, transparentni rezervoar za ulje, visok kapacitet sečenja sa lancem 1/4″-PM3.
-            </div>
-            </div>
-            </div>
-            </div>
-            </div>
-
-            <div class="kat col-md-4">
-            <a href="ostalo/ulja/ulja12.jpg" data-lightbox="mygallery">
-            <div class="card" style="width: 15rem;">
-            <img src="ostalo/ulja/ulja12.jpg" class="card-img-top" alt="...">
-            </a>
-            <div class="card-body">
-            <h5 class="card-title">MS 230</h5>
-            <button class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample37" role="button" aria-expanded="false" aria-controls="collapseExample">
-            Saznajte više
-            </button>
-            <div class="collapse" id="collapseExample37">
-            <div class="textkat ">
-            Lagana baterijska motorna testera za negu imanja i jednostavne zanatske radove. Poseduje mekanu dršku, brzu i laku zamenu lanca pomoću STIHL brzog zatezanja lanca, kočnicu lanca QuickStop Super, transparentni rezervoar za ulje, visok kapacitet sečenja sa lancem 1/4″-PM3.
-            </div>
-            </div>
-            </div>
-            </div>
-            </div>
-
-            <div class="kat col-md-4">
-            <a href="ostalo/ulja/ulja13.jpg" data-lightbox="mygallery">
-            <div class="card" style="width: 15rem;">
-            <img src="ostalo/ulja/ulja13.jpg" class="card-img-top" alt="...">
-            </a>
-            <div class="card-body">
-            <h5 class="card-title">MS 230</h5>
-            <button class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample38" role="button" aria-expanded="false" aria-controls="collapseExample">
-            Saznajte više
-            </button>
-            <div class="collapse" id="collapseExample38">
-            <div class="textkat ">
-            Lagana baterijska motorna testera za negu imanja i jednostavne zanatske radove. Poseduje mekanu dršku, brzu i laku zamenu lanca pomoću STIHL brzog zatezanja lanca, kočnicu lanca QuickStop Super, transparentni rezervoar za ulje, visok kapacitet sečenja sa lancem 1/4″-PM3.
-            </div>
-            </div>
-            </div>
-            </div>
-            </div>
-
-            <div class="kat col-md-4">
-            <a href="ostalo/ulja/ulja14.jpg" data-lightbox="mygallery">
-            <div class="card" style="width: 15rem;">
-            <img src="ostalo/ulja/ulja14.jpg" class="card-img-top" alt="...">
-            </a>
-            <div class="card-body">
-            <h5 class="card-title">MS 230</h5>
-            <button class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample39" role="button" aria-expanded="false" aria-controls="collapseExample">
-            Saznajte više
-            </button>
-            <div class="collapse" id="collapseExample39">
-            <div class="textkat ">
-            Lagana baterijska motorna testera za negu imanja i jednostavne zanatske radove. Poseduje mekanu dršku, brzu i laku zamenu lanca pomoću STIHL brzog zatezanja lanca, kočnicu lanca QuickStop Super, transparentni rezervoar za ulje, visok kapacitet sečenja sa lancem 1/4″-PM3.
-            </div>
-            </div>
-            </div>
-            </div>
-            </div>
-
-            <div class="kat col-md-4">
-            <a href="ostalo/ulja/ulja15.jpg" data-lightbox="mygallery">
-            <div class="card" style="width: 15rem;">
-            <img src="ostalo/ulja/ulja15.jpg" class="card-img-top" alt="...">
-            </a>
-            <div class="card-body">
-            <h5 class="card-title">MS 230</h5>
-            <button class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample40" role="button" aria-expanded="false" aria-controls="collapseExample">
-            Saznajte više
-            </button>
-            <div class="collapse" id="collapseExample40">
-            <div class="textkat ">
-            Lagana baterijska motorna testera za negu imanja i jednostavne zanatske radove. Poseduje mekanu dršku, brzu i laku zamenu lanca pomoću STIHL brzog zatezanja lanca, kočnicu lanca QuickStop Super, transparentni rezervoar za ulje, visok kapacitet sečenja sa lancem 1/4″-PM3.
-            </div>
-            </div>
-            </div>
-            </div>
-            </div>
-
-            <div class="kat col-md-4">
-            <a href="ostalo/ulja/ulja16.jpg" data-lightbox="mygallery">
-            <div class="card" style="width: 15rem;">
-            <img src="ostalo/ulja/ulja16.jpg" class="card-img-top" alt="...">
-            </a>
-            <div class="card-body">
-            <h5 class="card-title">MS 230</h5>
-            <button class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample41" role="button" aria-expanded="false" aria-controls="collapseExample">
-            Saznajte više
-            </button>
-            <div class="collapse" id="collapseExample41">
-            <div class="textkat ">
-            Lagana baterijska motorna testera za negu imanja i jednostavne zanatske radove. Poseduje mekanu dršku, brzu i laku zamenu lanca pomoću STIHL brzog zatezanja lanca, kočnicu lanca QuickStop Super, transparentni rezervoar za ulje, visok kapacitet sečenja sa lancem 1/4″-PM3.
-            </div>
-            </div>
-            </div>
-            </div>
-            </div>
-
-            <div class="kat col-md-4">
-            <a href="ostalo/ulja/ulja17.jpg" data-lightbox="mygallery">
-            <div class="card" style="width: 15rem;">
-            <img src="ostalo/ulja/ulja17.jpg" class="card-img-top" alt="...">
-            </a>
-            <div class="card-body">
-            <h5 class="card-title">MS 230</h5>
-            <button class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample42" role="button" aria-expanded="false" aria-controls="collapseExample">
-            Saznajte više
-            </button>
-            <div class="collapse" id="collapseExample42">
-            <div class="textkat ">
-            Lagana baterijska motorna testera za negu imanja i jednostavne zanatske radove. Poseduje mekanu dršku, brzu i laku zamenu lanca pomoću STIHL brzog zatezanja lanca, kočnicu lanca QuickStop Super, transparentni rezervoar za ulje, visok kapacitet sečenja sa lancem 1/4″-PM3.
-            </div>
-            </div>
-            </div>
-            </div>
-            </div>
-
-        
-            <div class="kat col-md-4">
-            <a href="ostalo/zastita/zastita1.jpg" data-lightbox="mygallery">
-            <div class="card" style="width: 15rem;">
-            <img src="ostalo/zastita/zastita1.jpg" class="card-img-top" alt="...">
-            </a>
-            <div class="card-body">
-            <h5 class="card-title">MS 230</h5>
-            <button class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample43" role="button" aria-expanded="false" aria-controls="collapseExample">
-            Saznajte više
-            </button>
-            <div class="collapse" id="collapseExample43">
-            <div class="textkat ">
-            Lagana baterijska motorna testera za negu imanja i jednostavne zanatske radove. Poseduje mekanu dršku, brzu i laku zamenu lanca pomoću STIHL brzog zatezanja lanca, kočnicu lanca QuickStop Super, transparentni rezervoar za ulje, visok kapacitet sečenja sa lancem 1/4″-PM3.
-            </div>
-            </div>
-            </div>
-            </div>
-            </div>
-
-            <div class="kat col-md-4">
-            <a href="ostalo/zastita/zastita2.jpg" data-lightbox="mygallery">
-            <div class="card" style="width: 15rem;">
-            <img src="ostalo/zastita/zastita2.jpg" class="card-img-top" alt="...">
-            </a>
-            <div class="card-body">
-            <h5 class="card-title">MS 230</h5>
-            <button class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample44" role="button" aria-expanded="false" aria-controls="collapseExample">
-            Saznajte više
-            </button>
-            <div class="collapse" id="collapseExample44">
-            <div class="textkat ">
-            Lagana baterijska motorna testera za negu imanja i jednostavne zanatske radove. Poseduje mekanu dršku, brzu i laku zamenu lanca pomoću STIHL brzog zatezanja lanca, kočnicu lanca QuickStop Super, transparentni rezervoar za ulje, visok kapacitet sečenja sa lancem 1/4″-PM3.
-            </div>
-            </div>
-            </div>
-            </div>
-            </div>
-
-            <div class="kat col-md-4">
-            <a href="ostalo/zastita/zastita3.jpg" data-lightbox="mygallery">
-            <div class="card" style="width: 15rem;">
-            <img src="ostalo/zastita/zastita3.jpg" class="card-img-top" alt="...">
-            </a>
-            <div class="card-body">
-            <h5 class="card-title">MS 230</h5>
-            <button class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample45" role="button" aria-expanded="false" aria-controls="collapseExample">
-            Saznajte više
-            </button>
-            <div class="collapse" id="collapseExample45">
-            <div class="textkat ">
-            Lagana baterijska motorna testera za negu imanja i jednostavne zanatske radove. Poseduje mekanu dršku, brzu i laku zamenu lanca pomoću STIHL brzog zatezanja lanca, kočnicu lanca QuickStop Super, transparentni rezervoar za ulje, visok kapacitet sečenja sa lancem 1/4″-PM3.
-            </div>
-            </div>
-            </div>
-            </div>
-            </div>
-
-            <div class="kat col-md-4">
-            <a href="ostalo/zastita/zastita4.jpg" data-lightbox="mygallery">
-            <div class="card" style="width: 15rem;">
-            <img src="ostalo/zastita/zastita4.jpg" class="card-img-top" alt="...">
-            </a>
-            <div class="card-body">
-            <h5 class="card-title">MS 230</h5>
-            <button class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample46" role="button" aria-expanded="false" aria-controls="collapseExample">
-            Saznajte više
-            </button>
-            <div class="collapse" id="collapseExample46">
-            <div class="textkat ">
-            Lagana baterijska motorna testera za negu imanja i jednostavne zanatske radove. Poseduje mekanu dršku, brzu i laku zamenu lanca pomoću STIHL brzog zatezanja lanca, kočnicu lanca QuickStop Super, transparentni rezervoar za ulje, visok kapacitet sečenja sa lancem 1/4″-PM3.
-            </div>
-            </div>
-            </div>
-            </div>
-            </div>
-
-            <div class="kat col-md-4">
-            <a href="ostalo/zastita/zastita5.jpg" data-lightbox="mygallery">
-            <div class="card" style="width: 15rem;">
-            <img src="ostalo/zastita/zastita5.jpg" class="card-img-top" alt="...">
-            </a>
-            <div class="card-body">
-            <h5 class="card-title">MS 230</h5>
-            <button class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample47" role="button" aria-expanded="false" aria-controls="collapseExample">
-            Saznajte više
-            </button>
-            <div class="collapse" id="collapseExample47">
-            <div class="textkat ">
-            Lagana baterijska motorna testera za negu imanja i jednostavne zanatske radove. Poseduje mekanu dršku, brzu i laku zamenu lanca pomoću STIHL brzog zatezanja lanca, kočnicu lanca QuickStop Super, transparentni rezervoar za ulje, visok kapacitet sečenja sa lancem 1/4″-PM3.
-            </div>
-            </div>
-            </div>
-            </div>
-            </div>
-
-            <div class="kat col-md-4">
-            <a href="ostalo/zastita/zastita6.jpg" data-lightbox="mygallery">
-            <div class="card" style="width: 15rem;">
-            <img src="ostalo/zastita/zastita6.jpg" class="card-img-top" alt="...">
-            </a>
-            <div class="card-body">
-            <h5 class="card-title">MS 230</h5>
-            <button class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample48" role="button" aria-expanded="false" aria-controls="collapseExample">
-            Saznajte više
-            </button>
-            <div class="collapse" id="collapseExample48">
-            <div class="textkat ">
-            Lagana baterijska motorna testera za negu imanja i jednostavne zanatske radove. Poseduje mekanu dršku, brzu i laku zamenu lanca pomoću STIHL brzog zatezanja lanca, kočnicu lanca QuickStop Super, transparentni rezervoar za ulje, visok kapacitet sečenja sa lancem 1/4″-PM3.
-            </div>
-            </div>
-            </div>
-            </div>
-            </div>
-
-            <div class="kat col-md-4">
-            <a href="ostalo/zastita/zastita7.jpg" data-lightbox="mygallery">
-            <div class="card" style="width: 15rem;">
-            <img src="ostalo/zastita/zastita7.jpg" class="card-img-top" alt="...">
-            </a>
-            <div class="card-body">
-            <h5 class="card-title">MS 230</h5>
-            <button class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample49" role="button" aria-expanded="false" aria-controls="collapseExample">
-            Saznajte više
-            </button>
-            <div class="collapse" id="collapseExample49">
-            <div class="textkat ">
-            Lagana baterijska motorna testera za negu imanja i jednostavne zanatske radove. Poseduje mekanu dršku, brzu i laku zamenu lanca pomoću STIHL brzog zatezanja lanca, kočnicu lanca QuickStop Super, transparentni rezervoar za ulje, visok kapacitet sečenja sa lancem 1/4″-PM3.
-            </div>
-            </div>
-            </div>
-            </div>
-            </div>
-
-            <div class="kat col-md-4">
-            <a href="ostalo/zastita/zastita8.jpg" data-lightbox="mygallery">
-            <div class="card" style="width: 15rem;">
-            <img src="ostalo/zastita/zastita8.jpg" class="card-img-top" alt="...">
-            </a>
-            <div class="card-body">
-            <h5 class="card-title">MS 230</h5>
-            <button class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample50" role="button" aria-expanded="false" aria-controls="collapseExample">
-            Saznajte više
-            </button>
-            <div class="collapse" id="collapseExample50">
-            <div class="textkat ">
-            Lagana baterijska motorna testera za negu imanja i jednostavne zanatske radove. Poseduje mekanu dršku, brzu i laku zamenu lanca pomoću STIHL brzog zatezanja lanca, kočnicu lanca QuickStop Super, transparentni rezervoar za ulje, visok kapacitet sečenja sa lancem 1/4″-PM3.
-            </div>
-            </div>
-            </div>
-            </div>
-            </div>
-
-        </div>
-        </div>
+ -->
 
    <div class="footer-dark">
         <footer>
@@ -1130,8 +1194,47 @@
                 </div>
                 <p class="copyright">Šumooprema © 2021</p>
             </div>
+            
         </footer>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
-    </body>
+   <!-- JBOX -->
+    <script type="text/javascript">
+            $(function() {
+                var $mybook         = $('#mybook');
+                var $bttn_next      = $('#next_page_button');
+                var $bttn_prev      = $('#prev_page_button');
+                var $loading        = $('#loading');
+                var $mybook_images  = $mybook.find('img');
+                var cnt_images      = $mybook_images.length;
+                var loaded          = 0;
+                 
+                $mybook_images.each(function(){
+                    var $img    = $(this);
+                    var source  = $img.attr('src');
+                    $('<img/>').load(function(){
+                        ++loaded;
+                        if(loaded == cnt_images){
+                            $loading.hide();
+                            $bttn_next.show();
+                            $bttn_prev.show();
+                            $mybook.show().booklet({
+                                name:               null,                            //  
+                                width:              800,                             //  
+                                height:             500,                             //   
+                                speed:              600,                             //  
+                                direction:          'LTR',                           //  
+                                                           //  
+                                next:               $bttn_next,                     //  
+                                prev:               $bttn_prev,                     //  
+                                                       
+                            });
+                            Cufon.refresh();
+                        }
+                    }).attr('src',source);
+                });
+                
+            });
+        </script>
+  </body>
 </html>

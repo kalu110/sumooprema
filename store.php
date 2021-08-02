@@ -2,10 +2,10 @@
 	
 	
 
-if (isset($_POST['submit'])){
+if (isset($_POST['poruci'])){
 	
 	
-	$name = $_POST["firstName"];
+	$name = $_POST['firstName'];
 	$lastname = $_POST['lastName'];
 	$email = $_POST['email'];
 	$address = $_POST['address'];
@@ -20,5 +20,3 @@ if (isset($_POST['submit'])){
 
 }
 ?>
-
-
